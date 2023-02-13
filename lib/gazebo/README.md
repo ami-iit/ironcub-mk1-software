@@ -1,0 +1,51 @@
+## Jet-plugin v1
+
+The jets are controlled by a custom gazebo plugin, called `jets-plugin`.
+
+The sdf elements child of `plugin` supported by this plugin are:
+
+|      Element name       |                           Type                           |                                                           Description                                                            |                                  Example element line                                  |
+| :---------------------: | :------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------: |
+| `yarpConfigurationFile` | [Gazebo URI](https://bitbucket.org/osrf/gazebo/wiki/uri) | Location of the [YARP .ini configuration file](http://www.yarp.it/yarp_config_files.html) used to store parameters of the plugin | `<yarpConfigurationFile>model://flying-box-yarp/conf/jets.ini</yarpConfigurationFile>` |
+
+The parameters supported by the plugin's .ini YARP configuration file are:
+
+|              Parameter name               | SubParameter |      Type       |   Units   | Default Value | Required |                                                                                                 Description                                                                                                 | Notes |
+| :---------------------------------------: | :----------: | :-------------: | :-------: | :-----------: | :------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---: |
+|              input-port-name              |      -       |     string      |     -     |       -       |   Yes    |                                                                                Port name used to read the input of the jets.                                                                                |       |
+|             thrust-port-name              |      -       |     string      |     -     |       -       |   Yes    |                                                                     Port name used to publish the current thrust provided by the jets.                                                                      |       |
+|              max-thrust-in-N              |      -       | list of doubles |  Newton   |       -       |   Yes    |                                                                                Maximum value of thrust provided by each jet.                                                                                |       |
+| inverse-time-constant-in-one-over-seconds |      -       |     double      | 1/seconds |       -       |   Yes    |                                                                    Inverse of the time constant of the first order dynamics of the jets                                                                     |       |
+|                 link-jets                 |              | list of strings |     -     |       -       |   Yes    | List of SDF link names on which the jets are supposed to be attached. The force of the jet is supposed to be applied to the origin of the link frame, along the direction specified by the jet-axis option. |
+|                 jet-axis                  |              | list of vectors |     -     |       -       |   Yes    |   List of the axis along with the thrust force is applied, expressed w.r.t. the link frame. For the moment, the force of the jet is supposed to be applied only along one of the axis of the link frame.    |
+
+Example configuration file:
+
+```
+input-port-name /jets/input:i
+thrust-port-name /jets/thrust:o
+
+link-jets (JETCAT_P200-RX_FR, JETCAT_P200-RX_FL, JETCAT_P200-RX_BR, JETCAT_P200-RX_BL)
+max-thrust-in-N (63.0, 63.0, 220.0, 220.0)
+# If the inverse of the time constant is 0.0, the jets are a pure integrator
+inverse-time-constant-in-one-over-seconds 0.0
+jet-axis ((-1.0 0.0 0.0), (1.0 0.0 0.0), (0.0 0.0 -1.0), (0.0 0.0 -1.0))
+```
+
+The port opened by the plugin are the following:
+
+|     Port name      |      YARP type      | Unit of measurements |                                      Description                                       |
+| :----------------: | :-----------------: | :------------------: | :------------------------------------------------------------------------------------: |
+| `input-port-name`  | `yarp::sig::Vector` |         N/s          |            Vector of size n_jets, defining the input to the jets dynamics.             |
+| `thrust-port-name` | `yarp::sig::Vector` |          N           | Vector of size n_jets, reporting the current value of the thrust provided by the jets. |
+
+The dynamics of the thrust (x) generated by each jet as a function of the input (u) is given by
+
+```
+ẋ = a * x + u
+```
+
+where `a` is the inverse of the time constant of the system (`inverse-time-constant-in-one-over-seconds` parameter). Furthermore, the thrust
+saturates at `max-thrust-in-N`. We consider as thrust the reaction force applied from the turbine to the robot link to witch the turbine is attached.
+
+The jets port should be easily usable with the WB-Toolbox block to read/write YARP ports.

@@ -1,18 +1,14 @@
 ## iRonCub models
 
-The models have been developed starting from the [iCub 2.5 models](https://github.com/robotology/icub-models/tree/master/iCub/robots).
-More in details, the same files have been copied and adapted to generate the iRonCub models.
+The URDF models have been developed starting from the [iCub 2.5 models](https://github.com/robotology/icub-models/tree/master/iCub/robots). More in details, the same files have been copied and adapted to generate the iRonCub models.
 
-Versions:
+**Versions:**
 
-- iRonCub Mk1
-It's the first iRonCub version. It has been generated starting from the CAD model. The conf and the meshes are independent from [icub-models](https://github.com/robotology/icub-models).
-
-- iRonCub Mk1_1
-It's the intermediate version after iRonCub Mk1 version. It has been generated starting from the CAD model. The conf and the meshes are independent from [icub-models](https://github.com/robotology/icub-models).
+- `iRonCub Mk1`: it's the first iRonCub version.
+- `iRonCub Mk1_1`: it's an intermediate version after iRonCub Mk1 version.
 
 ### How to use models in Gazebo (on Linux)
-You should add these lines in your `.bashrc` (**warning**! not needed if you source the `setup.sh` file as described in this [README](../software/README.md#ironcub-simulink-library))
+You should add these lines in your `.bashrc` (**warning**! not needed if you source the `setup.sh` file as described in this [README](../lib/README.md#ironcub-simulink-library))
 
 ``` bash
 export COMPONENT_IRONCUB_PREFIX=[path where this repository is stored]
@@ -22,7 +18,7 @@ export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:${COMPONENT_IRONCUB_PREFIX}/compon
 ```
 
 ### How to use models in Gazebo (on Windows)
-You should add these lines in your custom `.bat` file to be called from terminal (**warning**! not needed if you call the `setup.bat` file as described in this [README](../software/README.md#create-the-setupbat-file))
+You should add these lines in your custom `.bat` file to be called from terminal (**warning**! not needed if you call the `setup.bat` file as described in this [README](../lib/README.md#create-the-setupbat-file))
 
 ``` cmd
 set IRONCUB_COMPONENT_SOURCE_DIR=[path where this repository is stored]
@@ -30,8 +26,9 @@ set GAZEBO_MODEL_PATH=%GAZEBO_MODEL_PATH%;%IRONCUB_COMPONENT_SOURCE_DIR%\models\
 set GAZEBO_MODEL_PATH=%GAZEBO_MODEL_PATH%;%IRONCUB_COMPONENT_SOURCE_DIR%\models\iRonCub-Mk1\iRonCub\robots
 set GAZEBO_MODEL_PATH=%GAZEBO_MODEL_PATH%;%IRONCUB_COMPONENT_SOURCE_DIR%\models\iRonCub-Mk1_1\iRonCub\robots
 ```
+
 ### How to use the .urdf model with WBToolbox and Simulink (on Linux)
-You should add these lines in your `.bashrc` (**warning**! not needed if you source the `setup.sh` file as described in this [README](../software/README.md#ironcub-simulink-library))
+You should add these lines in your `.bashrc` (**warning**! not needed if you source the `setup.sh` file as described in this [README](../lib/README.md#ironcub-simulink-library))
 
 ``` bash
 export COMPONENT_IRONCUB_PREFIX=[path where this repository is stored]
@@ -44,7 +41,7 @@ Set the `YARP_ROBOT_NAME` variable as the name of the folder where the `model.ur
 - `export YARP_ROBOT_NAME=iRonCub-Mk1_1_Gazebo` for using `iRonCub Mk1_1` with **Gazebo**
 
 ### How to use the .urdf model with WBToolbox and Simulink (on Windows)
-You should add these lines in your custom `.bat` file to be called from terminal (**warning**! not needed if you call the `setup.bat` file as described in this [README](../software/README.md#create-the-setupbat-file))
+You should add these lines in your custom `.bat` file to be called from terminal (**warning**! not needed if you call the `setup.bat` file as described in this [README](../lib/README.md#create-the-setupbat-file))
 
 ``` cmd
 set IRONCUB_SOFTWARE_SOURCE_DIR=[path where this repository is stored]
