@@ -32,3 +32,4 @@ target_link_libraries(jets-plugin-v1 ${GAZEBO_LIBRARIES} ${YARP_LIBRARIES})
 install(TARGETS jets-plugin-v1
         RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
         LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}")
+

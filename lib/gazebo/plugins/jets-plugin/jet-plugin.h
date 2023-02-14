@@ -15,7 +15,7 @@
 namespace gazebo {
 /**
  * For a documentation of the parameters supported by the plugin, please see
- * README.md of the software directory.
+ * the associated README.md
  */
 class Jets : public ModelPlugin {
  public:
@@ -121,3 +121,4 @@ class Jets : public ModelPlugin {
 };  // namespace gazebo
 
 #endif  // JETPLUGIN_H
+
