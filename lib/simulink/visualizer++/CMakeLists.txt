@@ -1,4 +1,4 @@
-set(LIBRARY_TARGET_NAME Visualizer)
+set(LIBRARY_TARGET_NAME Visualizer_v1)
 
 # # C++ standard
 # set(CMAKE_CXX_STANDARD 14)
@@ -34,18 +34,18 @@ find_package(iDynTree)
 find_package(Eigen3)
 find_package(YARP)
 
-add_library(Visualizer SHARED
+add_library(Visualizer_v1 SHARED
     include/Visualizer/Visualizer.h
     src/Visualizer.cpp
     src/Factory.cpp)
 
 # Manually set the name of the output library. This is not required and it
 # is done only for sake of clarity.
-set_target_properties(Visualizer PROPERTIES
-    OUTPUT_NAME "Visualizer")
+set_target_properties(Visualizer_v1 PROPERTIES
+    OUTPUT_NAME "Visualizer_v1")
 
 # Link the library with the Core component containing the core classes
-target_link_libraries(Visualizer PRIVATE
+target_link_libraries(Visualizer_v1 PRIVATE
     BlockFactory::Core
     iDynTree::idyntree-visualization
     iDynTree::idyntree-modelio
@@ -54,13 +54,13 @@ target_link_libraries(Visualizer PRIVATE
     Eigen3::Eigen)
 
 # Setup the include directories
-target_include_directories(Visualizer PRIVATE
+target_include_directories(Visualizer_v1 PRIVATE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>)
 
-install(TARGETS Visualizer
+install(TARGETS Visualizer_v1
     RUNTIME DESTINATION "${CMAKE_INSTALL_BINDIR}"
     LIBRARY DESTINATION "${CMAKE_INSTALL_LIBDIR}")
 
 
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/conf/iRonCubVisualizer.ini
-    DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/simulink/conf/)
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/conf/iRonCubVisualizer_v1.ini
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/simulink_v1/conf/)
