@@ -1,4 +1,4 @@
-# iRonCub Library V1
+# iRonCub Library v1
 
 A library of Simulink models and Gazebo plugins to be used for flight simulations with `iRonCub-Mk1` and `iRonCub-Mk1_1`.
 
