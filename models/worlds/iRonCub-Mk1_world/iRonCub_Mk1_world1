@@ -56,13 +56,8 @@
         <initialConfiguration>0 0 0 0 0 0</initialConfiguration>
       </plugin>
       <include>
-        <uri>model://iRonCub-Mk1_Gazebo</uri>
+        <uri>model://iRonCub-Mk1_Gazebo_v1</uri>
       </include> 
-    </model>
-    <model name='pavement_plane'>
-      <include>
-        <uri>model://pavement_plane</uri>
-      </include>
     </model>
     <model name='collapsed_house'>
       <static>1</static>
@@ -167,16 +162,6 @@
         <pose frame=''>0.0 0.0 0.0 0.0 0.0 0.0</pose>
         <scale>1 1 1</scale>
       </model>
-      <model name='pavement_plane'>
-        <pose frame=''>-1.04732 -0.738253 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-1.04732 -0.738253 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
       <light name='sun'>
         <pose frame=''>0 0 10 0 -0 0</pose>
       </light>
@@ -190,3 +175,4 @@
     </gui>
   </world>
 </sdf>
+
