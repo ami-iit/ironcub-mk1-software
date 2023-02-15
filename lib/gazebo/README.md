@@ -2,7 +2,30 @@
 
 Jets are simulated by a custom Gazebo plugin, called `jets-plugin-v1`. We consider as thrust the reaction force applied from the turbine to the robot link to witch the turbine is attached. The jets port should be easily usable with the WB-Toolbox block to read/write YARP ports.
 
-### Usage
+### Setting up env. variables
+
+#### Ubuntu
+
+Add the following lines to your `.bashrc` file:
+
+```bash
+# This can be either the installation directory or the build directory
+export IRONCUB_INSTALL_PREFIX=<prefix>
+
+# Gazebo related env variables (see http://gazebosim.org/tutorials?tut=components#EnvironmentVariables )
+# Note: sourcing the gazebo setup.sh must be done only if it was not included before by another setup script of another project,
+#       otherwise it will overwrite the Gazebo-related enviromental variables already set
+source /usr/share/gazebo/setup.sh
+export GAZEBO_PLUGIN_PATH=${GAZEBO_PLUGIN_PATH}:${IRONCUB_INSTALL_PREFIX}/lib
+```
+Change the line `source /usr/share/gazebo/setup.sh` to the appropriate line if in your system `Gazebo` is not installed in `/usr`.
+
+
+#### Windows
+
+Follow the instruction in the main [README](../../README.md#running-the-repo-on-windows).
+
+---
 
 The plugin can be used in three different ways, depending on the cmake options with which it has been compiled:
 
