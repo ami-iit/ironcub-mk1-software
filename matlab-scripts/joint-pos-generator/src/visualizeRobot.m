@@ -1,7 +1,8 @@
 function [] = visualizeRobot(KinDynModel, jointPos, Config)
       
-    % set the path of robot meshes (hard-coded for the moment)
-    meshesPath = '/home/gnava/Software/github/ami-iit/component_ironcub/models';
+    % set the path of robot meshes
+    sourceDirPath = getenv('IRONCUB_SOFTWARE_SOURCE_DIR');
+    meshesPath    = [sourceDirPath,'/models'];
 
     % set the current robot pose
     updateRobotState(jointPos, KinDynModel, Config.Model.gravityAcc, Config.Model.ndof);

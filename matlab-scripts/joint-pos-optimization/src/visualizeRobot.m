@@ -14,8 +14,9 @@ function [] = visualizeRobot(KinDynModel, uStar)
 
     %% ------------Initialization----------------
     
-    % set the path of robot meshes (hard-coded for the moment)
-    meshesPath = '/home/gnava/Software/github/ami-iit/component_ironcub/models';
+    % set the path of robot meshes
+    sourceDirPath = getenv('IRONCUB_SOFTWARE_SOURCE_DIR');
+    meshesPath    = [sourceDirPath,'/models'];
 
     % get robot pose
     basePos  = uStar(1:3);
