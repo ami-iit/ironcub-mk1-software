@@ -12,8 +12,8 @@ error = zeros(4,1);
 % for every jet
 for i=1:4
     % collect dynamics quantities for every jet
-    f_jet_i = iRonCubLib.get_f(x(i,:), Config.jet.coeff(i,:));
-    g_jet_i = iRonCubLib.get_g(x(i,:), Config.jet.coeff(i,:));
+    f_jet_i = iRonCubLib_v1.get_f(x(i,:), Config.jet.coeff(i,:));
+    g_jet_i = iRonCubLib_v1.get_g(x(i,:), Config.jet.coeff(i,:));
     B_UU_i = Config.jet.coeff(i,9);
     
     error(i) = jets_dot(i) - jets_dot_des(i);

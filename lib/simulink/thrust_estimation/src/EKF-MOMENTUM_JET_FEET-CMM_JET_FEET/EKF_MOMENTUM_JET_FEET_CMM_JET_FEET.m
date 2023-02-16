@@ -2,10 +2,10 @@ function [xhatDot, Pdot] = EKF_MOMENTUM_JET_FEET_CMM_JET_FEET(x, inputs, coeff_P
 
 % 'inputs' vector consistes of [throttle_inputs, transformed_feet_contact_forces]'
 
-[J_A, J_C] = iRonCubLib.computeJacobians_EKF_MOMENTUM_JET_FEET_CMM_JET_FEET(x, inputs, Amatrix, GI_X_LF, GI_X_RF, coeff_P100, coeff_P220);
+[J_A, J_C] = iRonCubLib_v1.computeJacobians_EKF_MOMENTUM_JET_FEET_CMM_JET_FEET(x, inputs, Amatrix, GI_X_LF, GI_X_RF, coeff_P100, coeff_P220);
 
 % evolve the system
-xDot = iRonCubLib.dynamics_EKF_MOMENTUM_JET_FEET_CMM_JET_FEET(x, coeff_P100, coeff_P220, Amatrix, GI_X_LF, GI_X_RF, gravityForce,inputs);
+xDot = iRonCubLib_v1.dynamics_EKF_MOMENTUM_JET_FEET_CMM_JET_FEET(x, coeff_P100, coeff_P220, Amatrix, GI_X_LF, GI_X_RF, gravityForce,inputs);
 
 % compute the Kalman Gain
 K = P*J_C'/R;
