@@ -52,8 +52,8 @@ __MWOPC_PART_BEGIN__ /metadata/coreProperties.xml
   <dcterms:created xsi:type="dcterms:W3CDTF">2018-05-25T12:35:31Z</dcterms:created>
   <dc:creator>gnava</dc:creator>
   <cp:lastModifiedBy>gnava</cp:lastModifiedBy>
-  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-02-16T11:19:56Z</dcterms:modified>
-  <cp:revision>5.3</cp:revision>
+  <dcterms:modified xsi:type="dcterms:W3CDTF">2023-02-16T14:09:16Z</dcterms:modified>
+  <cp:revision>5.4</cp:revision>
   <cp:version>R2022a</cp:version>
 </cp:coreProperties>
 
@@ -126,7 +126,7 @@ stopMomentumBasedFlight;</P>
       <P Name="ModifiedByFormat">%&lt;Auto&gt;</P>
       <P Name="ModifiedDateFormat">%&lt;Auto&gt;</P>
       <P Name="RTWModifiedTimeStamp">598450781</P>
-      <P Name="ModelVersionFormat">%&lt;AutoIncrement:5.3&gt;</P>
+      <P Name="ModelVersionFormat">%&lt;AutoIncrement:5.4&gt;</P>
     </ConfigManagerSettings>
     <EditorSettings>
       <P Name="ShowLineDimensions">on</P>
@@ -1084,8 +1084,8 @@ __MWOPC_PART_BEGIN__ /simulink/graphicalInterface.xml
 __MWOPC_PART_BEGIN__ /simulink/modelDictionary.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" defaultPackage="slid" packageUris="http://schema.mathworks.com/mf0/slid/R2020b_20191110">
-  <System type="System" uuid="cd2074cf-a076-4dba-aa26-002ed0f6f661">
-    <Interface type="Interface" uuid="5e34def3-d2a8-4c4d-8ea9-8d1f83a154ad"/>
+  <System type="System" uuid="1cca0331-f4ba-4fbc-9a26-2504480efc21">
+    <Interface type="Interface" uuid="5878b050-7aef-42fb-b30f-90f0913a3cbd"/>
   </System>
 </MF0>
 __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
@@ -1097,16 +1097,16 @@ __MWOPC_PART_BEGIN__ /simulink/plugins/SimscapeModelParametersPlugin.xml
 __MWOPC_PART_BEGIN__ /simulink/ScheduleCore.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sltp_graph version="1.1" packageUris="http://schema.mathworks.com/mf0/sltp_mm/R2021b_202106150630">
-  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="802dd021-6fea-4fdb-a0d6-1d416e1b294c">
+  <sltp.mm.core.Context type="sltp.mm.core.Context" uuid="c709ae12-df80-4c61-bb89-6fa6e2a2ac91">
     <editorState type="sltp.mm.core.EditorState" uuid="89ef5bc4-ee29-4d80-8e54-a503d6eef43a">
       <panelState type="sltp.mm.core.EditorPanelState" uuid="24c209c1-4d4a-4172-b011-71711848ce90"/>
     </editorState>
-    <rootTask type="sltp.mm.core.Task" uuid="38fa4ca1-ad45-49cd-96b8-1f8beec9eaf6">
-      <context type="sltp.mm.core.Context" uuid="802dd021-6fea-4fdb-a0d6-1d416e1b294c"/>
+    <rootTask type="sltp.mm.core.Task" uuid="693e72bb-2886-4d59-af37-05f677d0910b">
+      <context type="sltp.mm.core.Context" uuid="c709ae12-df80-4c61-bb89-6fa6e2a2ac91"/>
       <explicit>false</explicit>
       <name>Default</name>
       <priority>-2147483648</priority>
-      <subgraph type="sltp.mm.core.Graph" uuid="fe80b18a-df0d-477e-a79b-f77d184b551a"/>
+      <subgraph type="sltp.mm.core.Graph" uuid="57ee4072-5e8f-4325-b637-aec7056e5cb3"/>
     </rootTask>
   </sltp.mm.core.Context>
 </sltp_graph>
@@ -1352,8 +1352,6 @@ __MWOPC_PART_BEGIN__ /simulink/stateflow/chart_29.xml
   <P Name="viewLimits">[0 156.75 0 153.75]</P>
   <P Name="screen">[1 1 3600 1200 1.180555555555556]</P>
   <P Name="viewObj">29</P>
-  <P Name="visible">1</P>
-  <subviewS/>
   <P Name="ssIdHighWaterMark">5</P>
   <P Name="decomposition">CLUSTER_CHART</P>
   <P Name="type">EML_CHART</P>
@@ -2368,6 +2366,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2271.xml
     <P Name="LibraryVersion">5.6</P>
     <P Name="SourceBlock">momentum_flight_control_v1/Compute Fuel Consumption</P>
     <P Name="SourceType"/>
+    <P Name="SourceProductName">iRonCub Library v1</P>
     <InstanceData>
       <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
       <P Name="RTWMemSecFuncExecute">Inherit from model</P>
@@ -2394,6 +2393,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2271.xml
     <P Name="LibraryVersion">5.6</P>
     <P Name="SourceBlock">momentum_flight_control_v1/Dynamics and Kinematics</P>
     <P Name="SourceType"/>
+    <P Name="SourceProductName">iRonCub Library v1</P>
     <InstanceData>
       <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
       <P Name="RTWMemSecFuncExecute">Inherit from model</P>
@@ -2423,6 +2423,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2271.xml
     <P Name="LibraryVersion">5.6</P>
     <P Name="SourceBlock">momentum_flight_control_v1/Flight Controller RAL-HUMANOIDS V3.0</P>
     <P Name="SourceType"/>
+    <P Name="SourceProductName">iRonCub Library v1</P>
     <InstanceData>
       <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
       <P Name="RTWMemSecFuncExecute">Inherit from model</P>
@@ -2442,6 +2443,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2271.xml
     <P Name="LibraryVersion">5.6</P>
     <P Name="SourceBlock">momentum_flight_control_v1/Flight State Machine</P>
     <P Name="SourceType"/>
+    <P Name="SourceProductName">iRonCub Library v1</P>
     <InstanceData>
       <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
       <P Name="RTWMemSecFuncExecute">Inherit from model</P>
@@ -2462,6 +2464,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2271.xml
     <P Name="LibraryVersion">5.6</P>
     <P Name="SourceBlock">momentum_flight_control_v1/Get System State</P>
     <P Name="SourceType"/>
+    <P Name="SourceProductName">iRonCub Library v1</P>
     <InstanceData>
       <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
       <P Name="RTWMemSecFuncExecute">Inherit from model</P>
@@ -2496,6 +2499,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2271.xml
     <P Name="LibraryVersion">5.6</P>
     <P Name="SourceBlock">momentum_flight_control_v1/JoyStick-flightGUI Commands</P>
     <P Name="SourceType"/>
+    <P Name="SourceProductName">iRonCub Library v1</P>
     <InstanceData>
       <P Name="RTWMemSecFuncInitTerm">Inherit from model</P>
       <P Name="RTWMemSecFuncExecute">Inherit from model</P>
@@ -2783,7 +2787,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2478.xml
     <P Name="FunctionName">sf_sfun</P>
     <P Name="PortCounts">[1 1]</P>
     <P Name="SFunctionDeploymentMode">off</P>
-    <P Name="EnableBusSupport">off</P>
+    <P Name="EnableBusSupport">on</P>
     <P Name="SFcnIsStateOwnerBlock">off</P>
   </Block>
   <Block BlockType="Terminator" Name=" Terminator " SID="2478::81">
@@ -3133,7 +3137,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2742.xml
     <P Name="Position">[275, 120, 515, 270]</P>
     <P Name="ZOrder">2315</P>
     <P Name="ForegroundColor">[0.196078, 0.325490, 0.749020]</P>
-    <P Name="LibraryVersion">5.3</P>
+    <P Name="LibraryVersion">5.6</P>
     <P Name="SourceBlock">thrust_estimation_v1/EKF-MOMENTUM_JET_FEET-CMM_FEET</P>
     <P Name="SourceType"/>
     <P Name="SourceProductName">iRonCub Library v1</P>
@@ -3513,7 +3517,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_2779.xml
     <P Name="FunctionName">sf_sfun</P>
     <P Name="PortCounts">[1 2]</P>
     <P Name="SFunctionDeploymentMode">off</P>
-    <P Name="EnableBusSupport">off</P>
+    <P Name="EnableBusSupport">on</P>
     <P Name="SFcnIsStateOwnerBlock">off</P>
     <Port>
       <P Name="PortNumber">2</P>
@@ -6737,7 +6741,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_529.xml
     <P Name="FunctionName">sf_sfun</P>
     <P Name="PortCounts">[1 2]</P>
     <P Name="SFunctionDeploymentMode">off</P>
-    <P Name="EnableBusSupport">off</P>
+    <P Name="EnableBusSupport">on</P>
     <P Name="SFcnIsStateOwnerBlock">off</P>
     <Port>
       <P Name="PortNumber">2</P>
@@ -6804,7 +6808,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_800.xml
     <P Name="FunctionName">sf_sfun</P>
     <P Name="PortCounts">[1 2]</P>
     <P Name="SFunctionDeploymentMode">off</P>
-    <P Name="EnableBusSupport">off</P>
+    <P Name="EnableBusSupport">on</P>
     <P Name="SFcnIsStateOwnerBlock">off</P>
     <Port>
       <P Name="PortNumber">2</P>
@@ -6871,7 +6875,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_816.xml
     <P Name="FunctionName">sf_sfun</P>
     <P Name="PortCounts">[1 2]</P>
     <P Name="SFunctionDeploymentMode">off</P>
-    <P Name="EnableBusSupport">off</P>
+    <P Name="EnableBusSupport">on</P>
     <P Name="SFcnIsStateOwnerBlock">off</P>
     <Port>
       <P Name="PortNumber">2</P>
@@ -6938,7 +6942,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_820.xml
     <P Name="FunctionName">sf_sfun</P>
     <P Name="PortCounts">[1 2]</P>
     <P Name="SFunctionDeploymentMode">off</P>
-    <P Name="EnableBusSupport">off</P>
+    <P Name="EnableBusSupport">on</P>
     <P Name="SFcnIsStateOwnerBlock">off</P>
     <Port>
       <P Name="PortNumber">2</P>
@@ -7682,7 +7686,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_912.xml
     <P Name="FunctionName">sf_sfun</P>
     <P Name="PortCounts">[1 2]</P>
     <P Name="SFunctionDeploymentMode">off</P>
-    <P Name="EnableBusSupport">off</P>
+    <P Name="EnableBusSupport">on</P>
     <P Name="SFcnIsStateOwnerBlock">off</P>
     <Port>
       <P Name="PortNumber">2</P>
@@ -7749,7 +7753,7 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_913.xml
     <P Name="FunctionName">sf_sfun</P>
     <P Name="PortCounts">[1 2]</P>
     <P Name="SFunctionDeploymentMode">off</P>
-    <P Name="EnableBusSupport">off</P>
+    <P Name="EnableBusSupport">on</P>
     <P Name="SFcnIsStateOwnerBlock">off</P>
     <Port>
       <P Name="PortNumber">2</P>
@@ -8083,12 +8087,12 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_957.xml
 __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
 <?xml version="1.0" encoding="utf-8"?>
 <System>
-  <P Name="Location">[1992, 27, 4480, 1440]</P>
+  <P Name="Location">[2160, 228, 4026, 1287]</P>
   <P Name="SystemRect">[0.000000, 0.000000, 0.000000, 0.000000]</P>
   <P Name="Open">on</P>
   <P Name="SetExecutionDomain">off</P>
   <P Name="ExecutionDomainType">Deduce</P>
-  <P Name="ZoomFactor">359</P>
+  <P Name="ZoomFactor">250</P>
   <P Name="ReportName">simulink-default.rpt</P>
   <P Name="SIDHighWatermark">2789</P>
   <P Name="SimulinkSubDomain">Simulink</P>
@@ -8110,12 +8114,6 @@ __MWOPC_PART_BEGIN__ /simulink/systems/system_root.xml
       <P Name="ContentPreviewEnabled">off</P>
       <P Name="ConfigSource">Workspace</P>
       <P Name="ConfigObject">&apos;WBTConfigRobot&apos;</P>
-      <P Name="RobotName">&apos;icubSim&apos;</P>
-      <P Name="UrdfFile">&apos;model.urdf&apos;</P>
-      <P Name="ControlledJoints">{&apos;l_elbow&apos;,&apos;l_shoulder_pitch&apos;,&apos;torso_roll&apos;}</P>
-      <P Name="ControlBoardsNames">{&apos;left_arm&apos;,&apos;right_arm&apos;,&apos;torso&apos;}</P>
-      <P Name="LocalName">&apos;WBT&apos;</P>
-      <P Name="GravityVector">[0,0,-9.81]</P>
     </InstanceData>
   </Block>
   <Block BlockType="SubSystem" Name="FLIGHT CONTROLLER (CORE) V3.0" SID="2271">
@@ -8432,7 +8430,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
   <Object PropName="BdWindowsInfo" ObjectID="1" ClassName="Simulink.BDWindowsInfo">
     <Object PropName="WindowsInfo" ObjectID="2" ClassName="Simulink.WindowInfo">
       <P Name="IsActive" Class="logical">1</P>
-      <P Name="Location" Class="double">[1992.0, 27.0, 2488.0, 1413.0]</P>
+      <P Name="Location" Class="double">[2160.0, 228.0, 1866.0, 1059.0]</P>
       <Object PropName="ModelBrowserInfo" ObjectID="3" ClassName="Simulink.ModelBrowserInfo">
         <P Name="Visible" Class="logical">0</P>
         <P Name="DockPosition" Class="char">Left</P>
@@ -8450,10 +8448,10 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="IsTabbed" Class="logical">1</P>
           <P Name="ViewObjType" Class="char">SimulinkTopLevel</P>
           <P Name="LoadSaveID" Class="char">0</P>
-          <P Name="Extents" Class="double">[2450.0, 1172.0]</P>
-          <P Name="ZoomFactor" Class="double">3.5862068965517242</P>
-          <P Name="Offset" Class="double">[-806.72325721153845, -239.90384615384616]</P>
-          <P Name="SceneRectInView" Class="double">[-806.72325721153845, -239.90384615384616, 683.17307692307691, 326.80769230769232]</P>
+          <P Name="Extents" Class="double">[1828.0, 818.0]</P>
+          <P Name="ZoomFactor" Class="double">2.5030010591973637</P>
+          <P Name="Offset" Class="double">[-830.29837005712807, -239.90384615384616]</P>
+          <P Name="SceneRectInView" Class="double">[-830.29837005712807, -239.90384615384616, 730.32330261425614, 326.80769230769232]</P>
         </Object>
         <Object ObjectID="6">
           <P Name="IsActive" Class="logical">0</P>
@@ -9405,7 +9403,7 @@ __MWOPC_PART_BEGIN__ /simulink/windowsInfo.xml
           <P Name="Minimized" Class="char">Unset</P>
         </Object>
       </Array>
-      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD8AAAAAP////8AAAAAAP////r/////AgAAAAH7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABiAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAiQD///8AAAABAAABMAAAA0z8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAB5AAADTAAAAawA////AAAAAwAACbgAAADQ/AEAAAAB/AAAAAAAAAm4AAAAAAD////6/////wEAAAAC+wAAADYARwBMAFUARQAyADoAUwBwAHIAZQBhAGQAUwBoAGUAZQB0AC8ATQBvAGQAZQBsAEQAYQB0AGEAAAAAAP////8AAAEWAP////v/////AAAAAAD/////AAABWQD///8AAAm4AAAE0QAAAAEAAAACAAAAAQAAAAL8AAAABAAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAMAAAAA</P>
+      <P Name="WindowState" Class="char">AAAA/wAAAAD9AAAAAwAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAAAAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD8AAAAAP////8AAAAAAP////r/////AgAAAAH7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABiAP////sAAABgAFMAaQBtAHUAbABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZQBzAAAAAAD/////AAAAiQD///8AAAABAAABMAAAA0z8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAdABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAB5AAADTAAAAawA////AAAAAwAAB0oAAADQ/AEAAAAB/AAAAAAAAAdKAAAAAAD////6/////wEAAAAC+wAAADYARwBMAFUARQAyADoAUwBwAHIAZQBhAGQAUwBoAGUAZQB0AC8ATQBvAGQAZQBsAEQAYQB0AGEAAAAAAP////8AAAEWAP////v/////AAAAAAD/////AAABWQD///8AAAdKAAADbwAAAAEAAAACAAAAAQAAAAL8AAAABAAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAMAAAAA</P>
       <Array PropName="PersistedApps" Type="Cell" Dimension="0*1"/>
       <P Name="WindowUuid" Class="char">2e98894b-59cd-4f97-8083-e75632a3cba5</P>
     </Object>
