@@ -10,6 +10,13 @@ project(ironcub_software
         VERSION 0.0.1
         LANGUAGES C CXX)
 
+# Disable in source build
+if("${PROJECT_SOURCE_DIR}" STREQUAL "${PROJECT_BINARY_DIR}")
+   message(FATAL_ERROR "In-source builds of ironcub_software are not allowed. "
+                       "Please remove CMakeCache.txt and the CMakeFiles/ directory, then build out-of-source. "
+                       "If you really want to do an in-source build, feel free to comment out this error.")
+endif("${PROJECT_SOURCE_DIR}" STREQUAL "${PROJECT_BINARY_DIR}")
+
 # Check the Operative System
 if(MSVC OR WIN32)
 	set(EXPORT_VAR "set")
