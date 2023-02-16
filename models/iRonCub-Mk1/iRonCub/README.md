@@ -1,6 +1,7 @@
 ### Available models:
 
 - `iRonCub-Mk1_v1`: model with no increased inertia;
+  - `model.urdf` -> model with obj meshes
   - `model_stl.urdf` -> model with stl meshes
 
 - `iRonCub-Mk1_Gazebo_v1`: model with increased inertia (for working inside Gazebo simulator);
