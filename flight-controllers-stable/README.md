@@ -1,6 +1,8 @@
 # Flight Controllers Stable
 
-Simulink flight controllers for simulations with iRonCub-Mk1 and iRonCub-Mk1_1. **All controllers are developed and tested on Ubuntu 20.04 LTS**.
+Simulink flight controllers for simulations with iRonCub-Mk1 and iRonCub-Mk1_1. 
+
+**All controllers are developed and tested on Ubuntu 20.04 LTS**.
 
 ## Content
 
