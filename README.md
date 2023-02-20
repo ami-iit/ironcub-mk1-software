@@ -122,4 +122,4 @@ Documentation entry points for the different folders are in the [wiki](https://g
 
 ## Maintainer
 
-Gabriele Nava, @gabrielenava
+Gabriele Nava, [@gabrielenava](https://github.com/gabrielenava)
