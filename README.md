@@ -16,7 +16,8 @@ https://user-images.githubusercontent.com/12396934/219008717-117eb146-cca6-4056-
 - [Matlab & Simulink](https://it.mathworks.com/products/matlab.html);
 - [Gazebo](https://classic.gazebosim.org/download);
 - [iDynTree](https://github.com/robotology/idyntree);
-- [BlockFactory](https://github.com/robotology/blockfactory).
+- [BlockFactory](https://github.com/robotology/blockfactory);
+- [Eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page);
 - [matlab-whole-body-simulator](https://github.com/ami-iit/matlab-whole-body-simulator).
 
 **Note:** the lowest suppported Matlab version is `R2021b`, and the lowest supported Gazebo version is `v.8`. For controllers that use Simulink library blocks from `matlab-whole-body-simulator`, the lowest supported Matlab version is `R2022b`.
