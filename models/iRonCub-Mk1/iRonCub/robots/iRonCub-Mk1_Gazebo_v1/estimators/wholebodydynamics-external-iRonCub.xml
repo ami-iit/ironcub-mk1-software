@@ -16,6 +16,13 @@
         <param name="jointVelFilterCutoffInHz">3.0</param> <!-- used if useJointVelocity is set to true -->
         <param name="jointAccFilterCutoffInHz">3.0</param> <!-- used if useJointAcceleration is set to true -->
         <param name="startWithZeroFTSensorOffsets">true</param> <!-- bypass using resetOffset of FT sensors in simulation -->
+        <param name="devicePeriodInSeconds">0.01</param>
+
+        <group name="HW_USE_MAS_IMU">
+            <param name="accelerometer">head_imu_acc_1x1</param>
+            <param name="gyroscope">head_imu_acc_1x1</param>
+        </group>
+
 
         <!-- map between iDynTree links (identified by a name)
              and skinDynLib links (identified by their frame name, a BodyPart enum
