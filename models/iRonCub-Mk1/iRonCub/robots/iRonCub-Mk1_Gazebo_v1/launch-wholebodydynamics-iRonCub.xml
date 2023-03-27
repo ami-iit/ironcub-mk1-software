@@ -60,6 +60,7 @@
     <device name="inertial" type="multipleanalogsensorsclient">
         <param name="remote"> /icubSim/head/inertials </param>
         <param name="local"> /wholeBodyDynamics/imu </param>
+        <param name="timeout"> 1.0 </param>
     </device>
 
     <!-- six axis force torque sensors -->
