@@ -1,4 +1,4 @@
-# iRonCub Software
+# iRonCub-Mk1 Software
 
 **WARNING! this repo is under active development, and the software that contains comes with no warranties!**
 
