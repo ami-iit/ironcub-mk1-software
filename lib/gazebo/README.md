@@ -31,7 +31,7 @@ The plugin can be used in three different ways, depending on the cmake options w
 
 |      cmake option       |     Description                                  |
 | :---------------------: | :------------------------------------------------------: | 
-| `USE_NONLINEAR_JET_DYNAMICS_PLUGIN` | when TRUE, the jets dynamics is simulated with a model obtained from experiment data, and assuming throttle as input. ([reference](https://github.com/ami-iit/ironcub_software/blob/porting_mk1_mk1_1/lib/gazebo/README.md#references)) |
+| `USE_NONLINEAR_JET_DYNAMICS_PLUGIN` | when TRUE, the jets dynamics is simulated with a model obtained from experiment data, and assuming throttle as input. ([reference](https://github.com/ami-iit/ironcub_mk1_software/blob/porting_mk1_mk1_1/lib/gazebo/README.md#references)) |
 | `USE_FIRST_ORDER_JET_DYNAMICS_PLUGIN` | when TRUE, the jets dynamics is simulated with a simple integrator. The input is thrust derivative. |
 |    | if both previuos options are FALSE, The input is assumed to be the thrust which is instantly set to Gazebo with no dynamics. |
 
@@ -54,7 +54,7 @@ The parameters supported by the plugin's `.ini` YARP configuration file are:
 | inverse-time-constant-in-one-over-seconds |      -       |     double      | 1/seconds |       -       |   Yes    |                                                                    Inverse of the time constant of the first order dynamics of the jets (related to `USE_FIRST_ORDER_JET_DYNAMICS_PLUGIN` option).                                                                    |       |
 |                 link-jets                 |              | list of strings |     -     |       -       |   Yes    | List of SDF link names on which the jets are supposed to be attached. The force of the jet is supposed to be applied to the origin of the link frame, along the direction specified by the jet-axis option. |
 |                 jet-axis                  |              | list of vectors |     -     |       -       |   Yes    |   List of the axis along with the thrust force is applied, expressed w.r.t. the link frame. For the moment, the force of the jet is supposed to be applied only along one of the axis of the link frame.    |
-|               jet-coefficients                  |              | list of vectors |     -     |       -       |   Yes    |   List of the coefficients representing the dynamic model of the jet engines. For more details see also ([reference](https://github.com/ami-iit/ironcub_software/blob/porting_mk1_mk1_1/lib/gazebo/README.md#references)).    |
+|               jet-coefficients                  |              | list of vectors |     -     |       -       |   Yes    |   List of the coefficients representing the dynamic model of the jet engines. For more details see also ([reference](https://github.com/ami-iit/ironcub_mk1_software/blob/porting_mk1_mk1_1/lib/gazebo/README.md#references)).    |
 
 Example configuration file:
 
@@ -99,4 +99,3 @@ The ports opened by the plugin are the following:
   doi={10.1109/LRA.2020.2970572}}
 
 ```
-

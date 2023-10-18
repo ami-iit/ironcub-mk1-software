@@ -6,13 +6,13 @@
 ################################################################################
 
 cmake_minimum_required(VERSION 3.5)
-project(ironcub_software
+project(ironcub_mk1_software
         VERSION 0.0.1
         LANGUAGES C CXX)
 
 # Disable in source build
 if("${PROJECT_SOURCE_DIR}" STREQUAL "${PROJECT_BINARY_DIR}")
-   message(FATAL_ERROR "In-source builds of ironcub_software are not allowed. "
+   message(FATAL_ERROR "In-source builds of ironcub_mk1_software are not allowed. "
                        "Please remove CMakeCache.txt and the CMakeFiles/ directory, then build out-of-source. "
                        "If you really want to do an in-source build, feel free to comment out this error.")
 endif("${PROJECT_SOURCE_DIR}" STREQUAL "${PROJECT_BINARY_DIR}")
@@ -71,4 +71,3 @@ add_subdirectory(models)
 # Configure MATLAB startup file
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/templates/setup_v1.in ${CMAKE_BINARY_DIR}/share/setup_v1${SETUP_SCRIPT_EXTENSION})
 INSTALL(FILES ${CMAKE_BINARY_DIR}/share/setup_v1${SETUP_SCRIPT_EXTENSION} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/ironcub)
-

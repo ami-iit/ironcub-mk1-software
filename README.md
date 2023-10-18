@@ -42,7 +42,7 @@ The installation procedure has been tested on Ubuntu 20.04 and Windows 10.
 On **Linux** or **macOS**, run:
 
 ```bash
-cd ironcub_software
+cd ironcub_mk1_software
 mkdir build
 cd build
 cmake .. -DCMAKE_INSTALL_PREFIX="/path/to/desired/install/dir" .
@@ -52,7 +52,7 @@ make install
 On **Windows**, run:
 
 ```cmd
-cd ironcub_software
+cd ironcub_mk1_software
 mkdir build
 cd build
 cmake .. -G"Visual Studio 16 2019" -DCMAKE_INSTALL_PREFIX="\path\to\desired\install\dir"
@@ -74,7 +74,7 @@ rem Unset the MESA variable (maybe useless on Windows)
 set MESA_LOADER_DRIVER_OVERRIDE=
 ```
 
-In this way the `batch` file will load both the setup script from the `robotology-superbuild` and the `ironcub_software`. Then, download **Windows Terminal** from the _Microsoft Store_.
+In this way the `batch` file will load both the setup script from the `robotology-superbuild` and the `ironcub_mk1_software`. Then, download **Windows Terminal** from the _Microsoft Store_.
 
 Launch the Windows Terminal app, go on `settings` and `Create a new profile`, then create a new profile specifying the new name and the tab-name.
 
@@ -104,13 +104,13 @@ This `sh` file contains the paths that are needed to use this repo.
 
 To better understand which variables are set by the `setup-v1.sh` script, see also these READMEs:
 
-- https://github.com/ami-iit/ironcub_software/tree/porting_mk1_mk1_1/models/worlds#usage
-- https://github.com/ami-iit/ironcub_software/blob/porting_mk1_mk1_1/lib/gazebo/README.md#setting-up-env-variables
-- https://github.com/ami-iit/ironcub_software/tree/porting_mk1_mk1_1/models#installation-and-usage
+- https://github.com/ami-iit/ironcub_mk1_software/tree/porting_mk1_mk1_1/models/worlds#usage
+- https://github.com/ami-iit/ironcub_mk1_software/blob/porting_mk1_mk1_1/lib/gazebo/README.md#setting-up-env-variables
+- https://github.com/ami-iit/ironcub_mk1_software/tree/porting_mk1_mk1_1/models#installation-and-usage
 
 ## Content
 
-Documentation entry points for the different folders are in the [wiki](https://github.com/ami-iit/ironcub_software/wiki) of the repo.
+Documentation entry points for the different folders are in the [wiki](https://github.com/ami-iit/ironcub_mk1_software/wiki) of the repo.
 
 - [flight-controllers-stable](flight-controllers-stable): Simulink controllers to run simulations of `iRonCub-Mk1` and `iRonCub-Mk1_1` flying in Gazebo simulator.
 
