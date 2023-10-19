@@ -1544,7 +1544,7 @@
 <plugin name="basestate" filename="libgazebo_yarp_basestate.so">
   <yarpConfigurationFile>model://iRonCub-Mk1_v1/iRonCub/conf/base.ini</yarpConfigurationFile>
 </plugin>
-<plugin name="jets-plugin" filename="libjets-plugin.so">
+<plugin name="jets-plugin" filename="libjets-plugin-v1.so">
   <yarpConfigurationFile>model://iRonCub-Mk1_v1/iRonCub/conf/jets.ini</yarpConfigurationFile>
 </plugin>
 </gazebo>
