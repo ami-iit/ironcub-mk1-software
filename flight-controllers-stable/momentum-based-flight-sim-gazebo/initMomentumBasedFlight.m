@@ -49,7 +49,7 @@ if ~Config.USE_JET_DYNAMICS && Config.USE_THRUST_ESTIMATOR
 end
 
 % Controller type: native GUI or joystick
-Config.USE_NATIVE_GUI                   = true;
+Config.USE_NATIVE_GUI                   = false;
 Config.USE_FLIGHT_DATA_GUI              = false;
 
 % Control type:
