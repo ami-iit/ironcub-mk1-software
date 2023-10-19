@@ -2,8 +2,8 @@
 
 The joypad used is a `Steelseries Stratus XL (PN69050)`. [How to run the joypad module](https://github.com/robotology/walking-controllers#how-to-run-the-joypad-module)
 
-![MicrosoftTeams-image (1)](https://github.com/ami-iit/ironcub_mk1_software/assets/12396934/6f12ff30-2612-4271-a698-c3453ec38e25)
-![MicrosoftTeams-image](https://github.com/ami-iit/ironcub_mk1_software/assets/12396934/f27d2835-926f-4366-9e03-49356c68d176)
+<img src="https://github.com/ami-iit/ironcub_mk1_software/assets/12396934/46635ac2-e3e0-4b54-aafd-a56224ff716c" width="200">
+<img src="https://github.com/ami-iit/ironcub_mk1_software/assets/12396934/6f12ff30-2612-4271-a698-c3453ec38e25" width="200">
 
 The module opens two ports: `/joypadDevice/xbox/buttons:o` and `/joypadDevice/xbox/axis:o`
 
