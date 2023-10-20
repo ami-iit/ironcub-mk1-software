@@ -3,7 +3,7 @@ function [decreaseMaxFootVerticalForce, increaseMinFootVerticalForce, activateEq
     % ONLY WHEN THE ROBOT IS IN CONTACT WITH THE GROUND:
     %
     % L1 = increase the vertical forces (decrease the thrust forces);
-    % R1 = increase the vertical forces (decrease the thrust forces);
+    % R1 = decrease the vertical forces (increase the thrust forces);
     % A  = activate feet equality constraints after landing (torque control)
     %
     activateEqConstrTorqueControl = joyButtons(1);

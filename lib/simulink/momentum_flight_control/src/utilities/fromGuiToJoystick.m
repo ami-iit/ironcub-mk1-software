@@ -109,7 +109,9 @@ function [joyButtons,joyAxes] = fromGuiToJoystick(gui_input)
     joyButtons(6)  = takeoff_pressed;
     joyButtons(16) = yaw_ac_pressed;
     joyButtons(15) = yaw_c_pressed;
-    joyButtons(3)  = turbo_pressed;
+
+    % turbo mode not available for joypad. Mapping to an unused slot.
+    joyButtons(7)  = turbo_pressed;
     
     if down_pressed
         joyButtons(14) = down_pressed;

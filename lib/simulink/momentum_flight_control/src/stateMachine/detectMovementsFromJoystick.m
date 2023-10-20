@@ -66,6 +66,6 @@ function [moveFront, moveLateral, moveUpDown, rotateRoll, rotatePitch, rotateYaw
         rotateYaw   = -1;
     end
     
-    % turbo mode. WARNING: at the moment it is mapped in a random unused button
-    turbo_mode = joyButtons(3);
+    % turbo mode. Not available with joypad. It is mapped in an unused slot
+    turbo_mode = joyButtons(7);
 end
