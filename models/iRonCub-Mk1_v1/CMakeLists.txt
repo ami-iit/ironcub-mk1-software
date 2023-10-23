@@ -3,3 +3,4 @@
 # CopyPolicy: Released under the terms of the GNU LGPL v2+.
 
 add_subdirectory(iRonCub)
+add_subdirectory(resources)
