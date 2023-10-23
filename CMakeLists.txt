@@ -36,6 +36,8 @@ elseif(UNIX)
 	set(SETUP_SCRIPT_EXTENSION ".sh")
 endif()
 
+option(ENABLE_MK1_MODEL_GENERATION "Re-Generate iRonCub-Mk1 urdf model." FALSE)
+option(ENABLE_MK1_1_MODEL_GENERATION "Re-Generate iRonCub-Mk1_1 urdf model." FALSE)
 option(INSTALL_IRONCUB_MODELS "Install iRonCub models in CMAKE_INSTALL_PREFIX." TRUE)
 option(INSTALL_LIBRARY "Install iRonCub gazebo plugin and simulink library." TRUE)
 option(USE_NONLINEAR_JET_DYNAMICS_PLUGIN "Install the nonlinear dynamics of the jet" FALSE)

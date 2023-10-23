@@ -29,10 +29,8 @@ A quick way to install the dependencies is via [conda package manager](https://d
 Please refer to [the documentation in `robotology-superbuild`](https://github.com/robotology/robotology-superbuild/blob/7d79a44e90fbcedf137ab6c5c1d83b943d6e6839/doc/conda-forge.md) to install and configure a conda distribution. Then, once your environment is set, you can run the following command to install the required dependencies.
 
 ```sh
-mamba create -n <conda-environment-name>
+mamba env create -n <conda-environment-name> --file environment.yml
 mamba activate  <conda-environment-name>
-mamba install -c conda-forge compilers cmake pkg-config make ninja
-mamba install -c conda-forge -c robotology icub-models idyntree-matlab-bindings wb-toolbox whole-body-controllers whole-body-estimators gazebo gazebo-yarp-plugins opencv
 ```
 
 The installation procedure has been tested on Ubuntu 20.04 and Windows 10.

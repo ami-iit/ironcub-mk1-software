@@ -767,7 +767,7 @@ XMLBlobs:
         <plugin name="basestate" filename="libgazebo_yarp_basestate.so">
           <yarpConfigurationFile>model://@CONF_FILE_DIR@/base.ini</yarpConfigurationFile>
         </plugin>
-        <plugin name="jets-plugin" filename="libjets-plugin.so">
+        <plugin name="jets-plugin" filename="libjets-plugin-v1.so">
           <yarpConfigurationFile>model://@CONF_FILE_DIR@/jets.ini</yarpConfigurationFile>
         </plugin>
         </gazebo>
