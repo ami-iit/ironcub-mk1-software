@@ -1,5 +1,4 @@
 # Copyright: (C) 2018 iCub Facility - Fondazione Istituto Italiano di Tecnologia
-# Authors: Luca Fiorio
 
 if(INSTALL_IRONCUB_MODELS)
 	set(robotname iRonCub-Mk1_1_v1)
