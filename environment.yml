@@ -4,6 +4,7 @@ channels:
   - robotology
 dependencies:
   - git
+  - git-lfs
   - compilers 
   - cmake 
   - pkg-config 
