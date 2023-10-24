@@ -161,7 +161,7 @@ endmacro()
 
 set(model-simmechanics-generated-models "")
 
-generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_v1_Gazebo
+generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_Gazebo_v1
                               SIMMECHANICS_XML "IRONCUB-MK1_SIM_MODEL.xml"
                               YAML_TEMPLATE "IRONCUB-MK1_simmechanics_options.yaml.in"
                               CSV_TEMPLATE "IRONCUB-MK1_joint_parameters.csv.in"
@@ -169,7 +169,7 @@ generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_v1_Gazebo
                               MESH_FORMAT_EXTENSION "obj"
                               INCREASE_INERTIA_FOR_GAZEBO)
 
-generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_v1_Gazebo
+generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_Gazebo_v1
                               SIMMECHANICS_XML "IRONCUB-MK1_SIM_MODEL.xml"
                               YAML_TEMPLATE "IRONCUB-MK1_simmechanics_options.yaml.in"
                               CSV_TEMPLATE "IRONCUB-MK1_joint_parameters.csv.in"
