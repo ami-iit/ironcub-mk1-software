@@ -58,7 +58,7 @@ cmake --build . --config Release --target INSTALL
 ```
 
 > [!warning]
-> "If you haven't configured [`git lfs`](https://git-lfs.com/), run `git lfs install` and `git lfs pull` inside the `ironcub_mk1_software` folder."
+> If you haven't configured [`git lfs`](https://git-lfs.com/), run `git lfs install` and `git lfs pull` inside the `ironcub_mk1_software` folder.
 
 
 ## Running the repo on Windows
