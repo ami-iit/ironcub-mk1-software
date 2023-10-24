@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - robotology
 dependencies:
+  - git
   - compilers 
   - cmake 
   - pkg-config 
