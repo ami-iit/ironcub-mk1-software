@@ -57,6 +57,10 @@ cmake .. -G"Visual Studio 16 2019" -DCMAKE_INSTALL_PREFIX="\path\to\desired\inst
 cmake --build . --config Release --target INSTALL
 ```
 
+> [!warning]
+> "If you haven't configured [`git lfs`](https://git-lfs.com/), run `git lfs install` and `git lfs pull` inside the `ironcub_mk1_software` folder."
+
+
 ## Running the repo on Windows
 
 To run the repository on Windows it is necessary to properly setup a Windows terminal where commands are executed. First, create a file `setup.bat` with the following content:
