@@ -1,0 +1,877 @@
+# Robot name
+robotName: iCub
+
+# Model base origin
+originXYZ: [0.0,0.0,0.63]
+originRPY: [0.0,0.0,3.14]
+
+# Meshes options
+scale: "0.001 0.001 0.001"
+forcelowercase: Yes
+@MESH_FILE_FORMAT@
+
+# Custom root link
+root: "root_link"
+
+# Rename options (map Creo names to URDF names)
+rename:
+ RootPart: base_link
+ SIM_SEA_2-5_ROOT_LINK: root_link
+ SIM_SEA_2-5_LAP_BELT_1: torso_1
+ SIM_SEA_2-5_LAP_BELT_2: torso_2
+ SIM_SEA_2-5_R_HIP_1: r_hip_1
+ SIM_SEA_2-5_R_HIP_2: r_hip_2
+ SIM_SEA_2-5_R_UPPER_THIGH: r_hip_3
+ SIM_SEA_2-5_R_THIGH: r_upper_leg
+ SIM_SEA_2-5_R_SHANK: r_lower_leg
+ SIM_SEA_2-5_R_ANKLE: r_ankle_1
+ SIM_SEA_2-5_R_FOOT: r_ankle_2
+ SIM_SEA_2-5_R_SOLE: r_foot
+ SIM_SEA_2-5_R_P220: chest_r_jet_turbine
+ SIM_SEA_2-5_L_HIP_1: l_hip_1
+ SIM_SEA_2-5_L_HIP_2: l_hip_2
+ SIM_SEA_2-5_L_UPPER_THIGH: l_hip_3
+ SIM_SEA_2-5_L_THIGH: l_upper_leg
+ SIM_SEA_2-5_L_SHANK: l_lower_leg
+ SIM_SEA_2-5_L_ANKLE: l_ankle_1
+ SIM_SEA_2-5_L_FOOT: l_ankle_2
+ SIM_SEA_2-5_L_SOLE: l_foot
+ SIM_SEA_2-5_L_P220: chest_l_jet_turbine
+ SIM_SEA_2-5_CHEST_BB: chest
+ SIM_SEA_2-5_R_SHOULDER_1: r_shoulder_1
+ SIM_SEA_2-5_R_SHOULDER_2: r_shoulder_2
+ SIM_SEA_2-5_R_UPPER_ARM: r_shoulder_3
+ SIM_SEA_2-5_R_ELBOW: r_upper_arm
+ SIM_SEA_2-5_R_ELBOW_PROSUP: r_elbow_1
+ SIM_SEA_2-5_R_ELBOW_P100: r_arm_jet_turbine
+ SIM_SEA_2-5_L_SHOULDER_1: l_shoulder_1
+ SIM_SEA_2-5_L_SHOULDER_2: l_shoulder_2
+ SIM_SEA_2-5_L_UPPER_ARM: l_shoulder_3
+ SIM_SEA_2-5_L_ELBOW: l_upper_arm
+ SIM_SEA_2-5_L_ELBOW_PROSUP: l_elbow_1
+ SIM_SEA_2-5_L_ELBOW_P100: l_arm_jet_turbine
+ SIM_SEA_2-5_NECK_1: neck_1
+ SIM_SEA_2-5_NECK_2: neck_2
+ SIM_SEA_2-5_HEAD: head
+ RootGround--RootPart: root_joint_unknown
+ RootPart--RootPart: base_joint_unknown
+ RootPart--SIM_SEA_2-5_ROOT_LINK: base_fixed_joint
+ RootPart--SIM_SEA_2-5_R_HIP_1: r_hip_unknown
+ RootPart--SIM_SEA_2-5_L_HIP_1: l_hip_unknown
+ RootPart--SIM_SEA_2-5_CHEST_BB: torso_yaw_unknown
+ RootPart--SIM_SEA_2-5_NECK_1: neck_pitch_unknown
+ SIM_SEA_2-5_ROOT_LINK--SIM_SEA_2-5_LAP_BELT_1: torso_pitch
+ SIM_SEA_2-5_LAP_BELT_1--SIM_SEA_2-5_LAP_BELT_2: torso_roll
+ SIM_SEA_2-5_LAP_BELT_2--SIM_SEA_2-5_CHEST_BB: torso_yaw
+ SIM_SEA_2-5_ROOT_LINK--SIM_SEA_2-5_R_HIP_1: r_hip_pitch
+ SIM_SEA_2-5_R_HIP_1--SIM_SEA_2-5_R_HIP_2: r_hip_roll
+ SIM_SEA_2-5_R_HIP_2--SIM_SEA_2-5_R_UPPER_THIGH: r_leg_ft_sensor
+ SIM_SEA_2-5_R_UPPER_THIGH--SIM_SEA_2-5_R_THIGH: r_hip_yaw
+ SIM_SEA_2-5_R_THIGH--SIM_SEA_2-5_R_SHANK: r_knee
+ SIM_SEA_2-5_R_SHANK--SIM_SEA_2-5_R_ANKLE: r_ankle_pitch
+ SIM_SEA_2-5_R_ANKLE--SIM_SEA_2-5_R_FOOT: r_ankle_roll
+ SIM_SEA_2-5_R_FOOT--SIM_SEA_2-5_R_SOLE: r_foot_ft_sensor
+ SIM_SEA_2-5_ROOT_LINK--SIM_SEA_2-5_L_HIP_1: l_hip_pitch
+ SIM_SEA_2-5_L_HIP_1--SIM_SEA_2-5_L_HIP_2: l_hip_roll
+ SIM_SEA_2-5_L_HIP_2--SIM_SEA_2-5_L_UPPER_THIGH: l_leg_ft_sensor
+ SIM_SEA_2-5_L_UPPER_THIGH--SIM_SEA_2-5_L_THIGH: l_hip_yaw
+ SIM_SEA_2-5_L_THIGH--SIM_SEA_2-5_L_SHANK: l_knee
+ SIM_SEA_2-5_L_SHANK--SIM_SEA_2-5_L_ANKLE: l_ankle_pitch
+ SIM_SEA_2-5_L_ANKLE--SIM_SEA_2-5_L_FOOT: l_ankle_roll
+ SIM_SEA_2-5_L_FOOT--SIM_SEA_2-5_L_SOLE: l_foot_ft_sensor
+ SIM_SEA_2-5_CHEST_BB--SIM_SEA_2-5_R_SHOULDER_1: r_shoulder_pitch
+ SIM_SEA_2-5_CHEST_BB--SIM_SEA_2-5_L_P220: l_jet_turbine
+ SIM_SEA_2-5_CHEST_BB--SIM_SEA_2-5_R_P220: r_jet_turbine
+ SIM_SEA_2-5_R_SHOULDER_1--SIM_SEA_2-5_R_SHOULDER_2: r_shoulder_roll
+ SIM_SEA_2-5_R_SHOULDER_2--SIM_SEA_2-5_R_UPPER_ARM: r_shoulder_yaw
+ SIM_SEA_2-5_R_UPPER_ARM--SIM_SEA_2-5_R_ELBOW: r_arm_ft_sensor
+ SIM_SEA_2-5_R_ELBOW--SIM_SEA_2-5_R_ELBOW_PROSUP: r_elbow
+ SIM_SEA_2-5_R_ELBOW_PROSUP--SIM_SEA_2-5_R_ELBOW_P100: r_elbow_turbine
+ SIM_SEA_2-5_CHEST_BB--SIM_SEA_2-5_L_SHOULDER_1: l_shoulder_pitch
+ SIM_SEA_2-5_L_SHOULDER_1--SIM_SEA_2-5_L_SHOULDER_2: l_shoulder_roll
+ SIM_SEA_2-5_L_SHOULDER_2--SIM_SEA_2-5_L_UPPER_ARM: l_shoulder_yaw
+ SIM_SEA_2-5_L_UPPER_ARM--SIM_SEA_2-5_L_ELBOW: l_arm_ft_sensor
+ SIM_SEA_2-5_L_ELBOW--SIM_SEA_2-5_L_ELBOW_PROSUP: l_elbow
+ SIM_SEA_2-5_L_ELBOW_PROSUP--SIM_SEA_2-5_L_ELBOW_P100: l_elbow_turbine
+ SIM_SEA_2-5_CHEST_BB--SIM_SEA_2-5_NECK_1: neck_pitch
+ SIM_SEA_2-5_NECK_1--SIM_SEA_2-5_NECK_2: neck_roll
+ SIM_SEA_2-5_NECK_2--SIM_SEA_2-5_HEAD: neck_yaw
+
+# Frames options
+exportAllUseradded: No
+
+exportedFrames:
+  - frameName: SCSYS_REALSENSE
+    frameReferenceLink: chest
+    exportedFrameName: chest_realsense_frame
+  - frameName: SCSYS_L_SOLE
+    frameReferenceLink: l_foot
+    exportedFrameName: l_sole
+  - frameName: SCSYS_R_SOLE
+    frameReferenceLink: r_foot
+    exportedFrameName: r_sole
+  - frameName: SCSYS_R_UPPER_LEG_DH_FRAME
+    frameReferenceLink: r_upper_leg
+    exportedFrameName: r_upper_leg_dh_frame
+  - frameName: SCSYS_L_UPPER_LEG_DH_FRAME
+    frameReferenceLink: l_upper_leg
+    exportedFrameName: l_upper_leg_dh_frame
+  - frameName: SCSYS_L_UPPER_LEG_BACK_CONTACT
+    frameReferenceLink: l_upper_leg
+    exportedFrameName: l_upper_leg_back_contact
+  - frameName: SCSYS_R_UPPER_LEG_BACK_CONTACT
+    frameReferenceLink: r_upper_leg
+    exportedFrameName: r_upper_leg_back_contact
+  - frameName: SCSYS_HEAD_MTX_IMU
+    frameReferenceLink: head
+    exportedFrameName: imu_frame
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_15
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_15
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_9
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_9
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_6
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_6
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_3
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_3
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_4
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_4
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_10
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_10
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_5
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_5
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_0
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_0
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_11
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_11
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_14
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_14
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_16
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_16
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_17
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_17
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_28
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_28
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_29
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_29
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_31
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_31
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_41
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_41
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_38
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_38
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_35
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_35
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_36
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_36
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_42
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_42
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_37
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_37
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_47
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_47
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_32
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_32
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_43
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_43
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_46
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_46
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_49
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_49
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_50
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_50
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_51
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_51
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_52
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_52
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_53
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_53
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_54
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_54
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_55
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_55
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_60
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_60
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_61
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_61
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_56
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_56
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_19
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_19
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_20
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_20
+  - frameName: SCSYS_R_LOWER_LEG_SKIN_21
+    frameReferenceLink: r_lower_leg
+    exportedFrameName: r_lower_leg_skin_21
+
+linkFrames:
+  - linkName: root_link
+    frameName: SCSYS_SIM_LAP_BELT_2_ALT_ORIG_1
+  - linkName: l_hip_3
+    frameName: SCSYS_L_UPPER_LEG_FT45
+  - linkName: l_foot
+    frameName: SCSYS_L_FOOT_FT45
+  - linkName: r_hip_3
+    frameName: SCSYS_R_UPPER_LEG_FT45
+  - linkName: r_foot
+    frameName: SCSYS_R_FOOT_FT45
+  - linkName: l_upper_arm
+    frameName: SCSYS_L_UPPER_ARM_FT45
+    frameReferenceLink: l_shoulder_3
+  - linkName: r_upper_arm
+    frameName: SCSYS_R_UPPER_ARM_FT45
+    frameReferenceLink: r_shoulder_3
+  - linkName: r_hip_1
+    frameName: SCSYS_R_HIP_PITCH_FRAME
+  - linkName: r_hip_2
+    frameName: SCSYS_R_HIP_ROLL_FRAME
+  - linkName: r_upper_leg
+    frameName: SCSYS_R_HIP_YAW_FRAME
+  - linkName: r_lower_leg
+    frameName: SCSYS_R_KNEE_FRAME
+  - linkName: r_ankle_1
+    frameName: SCSYS_R_ANKLE_PITCH_FRAME
+  - linkName: r_ankle_2
+    frameName: SCSYS_R_ANKLE_ROLL_FRAME
+  - linkName: l_hip_1
+    frameName: SCSYS_L_HIP_PITCH_FRAME
+  - linkName: l_hip_2
+    frameName: SCSYS_L_HIP_ROLL_FRAME
+  - linkName: l_upper_leg
+    frameName: SCSYS_L_HIP_YAW_FRAME
+  - linkName: l_lower_leg
+    frameName: SCSYS_L_KNEE_FRAME
+  - linkName: l_ankle_1
+    frameName: SCSYS_L_ANKLE_PITCH_FRAME
+  - linkName: l_ankle_2
+    frameName: SCSYS_L_ANKLE_ROLL_FRAME
+  - linkName: r_arm_jet_turbine
+    frameName: SCSYS_RIGHT-A_THRUST_FRAME
+  - linkName: l_arm_jet_turbine
+    frameName: SCSYS_LEFT-A_THRUST_FRAME
+  - linkName: chest_r_jet_turbine
+    frameName: SCSYS_J_THRUST_FRAME
+  - linkName: chest_l_jet_turbine
+    frameName: SCSYS_J_THRUST_FRAME
+
+# Sensors options
+forceTorqueSensors:
+  - jointName: l_leg_ft_sensor
+    directionChildToParent: Yes
+    sensorBlobs:
+    - |
+        <plugin name="left_leg_ft_plugin" filename="libgazebo_yarp_forcetorque.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/FT/gazebo_icub_left_leg_ft.ini</yarpConfigurationFile>
+        </plugin>
+  - jointName: r_leg_ft_sensor
+    directionChildToParent: Yes
+    sensorBlobs:
+    - |
+        <plugin name="right_leg_ft_plugin" filename="libgazebo_yarp_forcetorque.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/FT/gazebo_icub_right_leg_ft.ini</yarpConfigurationFile>
+        </plugin>
+@FEET_FT_SENSORS@
+  - jointName: l_arm_ft_sensor
+    directionChildToParent: Yes
+    sensorBlobs:
+    - |
+        <plugin name="left_arm_ft_plugin" filename="libgazebo_yarp_forcetorque.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/FT/gazebo_icub_left_arm_ft.ini</yarpConfigurationFile>
+        </plugin>
+  - jointName: r_arm_ft_sensor
+    directionChildToParent: Yes
+    sensorBlobs:
+    - |
+        <plugin name="right_arm_ft_plugin" filename="libgazebo_yarp_forcetorque.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/FT/gazebo_icub_right_arm_ft.ini</yarpConfigurationFile>
+        </plugin>
+
+sensors:
+  - sensorName: default
+    exportFrameInURDF: No
+    sensorType: "accelerometer"
+    updateRate: "100"
+    sensorBlobs:
+    - |
+        <plugin name="iCub_yarp_gazebo_plugin_ACC" filename="libgazebo_yarp_inertial.so" />
+  - sensorName: default
+    exportFrameInURDF: No
+    sensorType: "gyroscope"
+    updateRate: "100"
+  - frameName: SCSYS_HEAD_MTX_IMU
+    linkName: head
+    sensorName: head_imu_acc_1x1
+    sensorType: "accelerometer"
+    sensorBlobs:
+    - |
+        <plugin name="iCub_yarp_gazebo_plugin_IMU" filename="libgazebo_yarp_imu.so">
+            <yarpConfigurationFile>model://@CONF_FILE_DIR@/gazebo_icub_inertial.ini</yarpConfigurationFile>
+        </plugin>
+  - frameName: SCSYS_ROOT_LINK_EMS_ACC_EB5
+    linkName: root_link
+    sensorName: root_link_ems_acc_eb5
+    sensorType: "accelerometer"
+  - frameName: SCSYS_ROOT_LINK_EMS_GYRO_EB5
+    linkName: root_link
+    sensorName: root_link_ems_gyro_eb5
+    sensorType: "gyroscope"
+  - frameName: SCSYS_CHEST_EMS_ACC_EB1
+    linkName: chest
+    sensorName: chest_ems_acc_eb1
+    sensorType: "accelerometer"
+  - frameName: SCSYS_CHEST_EMS_GYRO_EB1
+    linkName: chest
+    sensorName: chest_ems_gyro_eb1
+    sensorType: "gyroscope"
+  - frameName: SCSYS_CHEST_EMS_ACC_EB2
+    linkName: chest
+    sensorName: chest_ems_acc_eb2
+    sensorType: "accelerometer"
+  - frameName: SCSYS_CHEST_EMS_GYRO_EB2
+    linkName: chest
+    sensorName: chest_ems_gyro_eb2
+    sensorType: "gyroscope"
+  - frameName: SCSYS_CHEST_EMS_ACC_EB3
+    linkName: chest
+    sensorName: chest_ems_acc_eb3
+    sensorType: "accelerometer"
+  - frameName: SCSYS_CHEST_EMS_GYRO_EB3
+    linkName: chest
+    sensorName: chest_ems_gyro_eb3
+    sensorType: "gyroscope"
+  - frameName: SCSYS_CHEST_EMS_ACC_EB4
+    linkName: chest
+    sensorName: chest_ems_acc_eb4
+    sensorType: "accelerometer"
+  - frameName: SCSYS_CHEST_EMS_GYRO_EB4
+    linkName: chest
+    sensorName: chest_ems_gyro_eb4
+    sensorType: "gyroscope"
+  - frameName: SCSYS_CHEST_MTB_ACC_0B7
+    linkName: chest
+    sensorName: chest_mtb_acc_0b7
+    sensorType: "accelerometer"
+  - frameName: SCSYS_CHEST_MTB_ACC_0B8
+    linkName: chest
+    sensorName: chest_mtb_acc_0b8
+    sensorType: "accelerometer"
+  - frameName: SCSYS_CHEST_MTB_ACC_0B9
+    linkName: chest
+    sensorName: chest_mtb_acc_0b9
+    sensorType: "accelerometer"
+  - frameName: SCSYS_CHEST_MTB_ACC_0B10
+    linkName: chest
+    sensorName: chest_mtb_acc_0b10
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_UPPER_ARM_MTB_ACC_2B10
+    linkName: r_upper_arm
+    sensorName: r_upper_arm_mtb_acc_2b10
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_UPPER_ARM_MTB_ACC_2B11
+    linkName: r_upper_arm
+    sensorName: r_upper_arm_mtb_acc_2b11
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_UPPER_ARM_MTB_ACC_2B12
+    linkName: r_upper_arm
+    sensorName: r_upper_arm_mtb_acc_2b12
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_UPPER_ARM_MTB_ACC_2B13
+    linkName: r_upper_arm
+    sensorName: r_upper_arm_mtb_acc_2b13
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_ARM_MTB_ACC_1B10
+    linkName: l_upper_arm
+    sensorName: l_upper_arm_mtb_acc_1b10
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_ARM_MTB_ACC_1B11
+    linkName: l_upper_arm
+    sensorName: l_upper_arm_mtb_acc_1b11
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_ARM_MTB_ACC_1B12
+    linkName: l_upper_arm
+    sensorName: l_upper_arm_mtb_acc_1b12
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_ARM_MTB_ACC_1B13
+    linkName: l_upper_arm
+    sensorName: l_upper_arm_mtb_acc_1b13
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_UPPER_LEG_EMS_ACC_EB8
+    linkName: r_upper_leg
+    sensorName: r_upper_leg_ems_acc_eb8
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_UPPER_LEG_EMS_ACC_EB11
+    linkName: r_upper_leg
+    sensorName: r_upper_leg_ems_acc_eb11
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_UPPER_LEG_EMS_GYRO_EB8
+    linkName: r_upper_leg
+    sensorName: r_upper_leg_ems_gyro_eb8
+    sensorType: "gyroscope"
+  - frameName: SCSYS_R_UPPER_LEG_EMS_GYRO_EB11
+    linkName: r_upper_leg
+    sensorName: r_upper_leg_ems_gyro_eb11
+    sensorType: "gyroscope"
+  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B1
+    linkName: r_upper_leg
+    sensorName: r_upper_leg_mtb_acc_11b1
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B2
+    linkName: r_upper_leg
+    sensorName: r_upper_leg_mtb_acc_11b2
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B3
+    linkName: r_upper_leg
+    sensorName: r_upper_leg_mtb_acc_11b3
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B4
+    linkName: r_upper_leg
+    sensorName: r_upper_leg_mtb_acc_11b4
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B5
+    linkName: r_upper_leg
+    sensorName: r_upper_leg_mtb_acc_11b5
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B6
+    linkName: r_upper_leg
+    sensorName: r_upper_leg_mtb_acc_11b6
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_UPPER_LEG_MTB_ACC_11B7
+    linkName: r_upper_leg
+    sensorName: r_upper_leg_mtb_acc_11b7
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_LOWER_LEG_EMS_ACC_EB9
+    linkName: r_lower_leg
+    sensorName: r_lower_leg_ems_acc_eb9
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_LOWER_LEG_EMS_GYRO_EB9
+    linkName: r_lower_leg
+    sensorName: r_lower_leg_ems_gyro_eb9
+    sensorType: "gyroscope"
+  - frameName: SCSYS_R_LOWER_LEG_MTB_ACC_11B8
+    linkName: r_lower_leg
+    sensorName: r_lower_leg_mtb_acc_11b8
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_LOWER_LEG_MTB_ACC_11B9
+    linkName: r_lower_leg
+    sensorName: r_lower_leg_mtb_acc_11b9
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_LOWER_LEG_MTB_ACC_11B10
+    linkName: r_lower_leg
+    sensorName: r_lower_leg_mtb_acc_11b10
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_LOWER_LEG_MTB_ACC_11B11
+    linkName: r_lower_leg
+    sensorName: r_lower_leg_mtb_acc_11b11
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_FOOT_MTB_ACC_11B12
+    linkName: r_foot
+    sensorName: r_foot_mtb_acc_11b12
+    sensorType: "accelerometer"
+  - frameName: SCSYS_R_FOOT_MTB_ACC_11B13
+    linkName: r_foot
+    sensorName: r_foot_mtb_acc_11b13
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_EMS_ACC_EB6
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_ems_acc_eb6
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_EMS_ACC_EB10
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_ems_acc_eb10
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_EMS_GYRO_EB6
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_ems_gyro_eb6
+    sensorType: "gyroscope"
+  - frameName: SCSYS_L_UPPER_LEG_EMS_GYRO_EB10
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_ems_gyro_eb10
+    sensorType: "gyroscope"
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B1
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_mtb_acc_10b1
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B2
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_mtb_acc_10b2
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B3
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_mtb_acc_10b3
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B4
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_mtb_acc_10b4
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B5
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_mtb_acc_10b5
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B6
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_mtb_acc_10b6
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_UPPER_LEG_MTB_ACC_10B7
+    linkName: l_upper_leg
+    sensorName: l_upper_leg_mtb_acc_10b7
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_LOWER_LEG_EMS_ACC_EB7
+    linkName: l_lower_leg
+    sensorName: l_lower_leg_ems_acc_eb7
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_LOWER_LEG_EMS_GYRO_EB7
+    linkName: l_lower_leg
+    sensorName: l_lower_leg_ems_gyro_eb7
+    sensorType: "gyroscope"
+  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B8
+    linkName: l_lower_leg
+    sensorName: l_lower_leg_mtb_acc_10b8
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B9
+    linkName: l_lower_leg
+    sensorName: l_lower_leg_mtb_acc_10b9
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B10
+    linkName: l_lower_leg
+    sensorName: l_lower_leg_mtb_acc_10b10
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_LOWER_LEG_MTB_ACC_10B11
+    linkName: l_lower_leg
+    sensorName: l_lower_leg_mtb_acc_10b11
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_FOOT_MTB_ACC_10B12
+    linkName: l_foot
+    sensorName: l_foot_mtb_acc_10b12
+    sensorType: "accelerometer"
+  - frameName: SCSYS_L_FOOT_MTB_ACC_10B13
+    linkName: l_foot
+    sensorName: l_foot_mtb_acc_10b13
+    sensorType: "accelerometer"
+
+
+# Workaround options
+@REVERSE_ROTATION_AXIS@
+
+@ASSIGNED_COLLISION_GEOMETRIES@
+
+assignedMasses:
+  chest: @CHEST_ASSIGNED_MASS@
+  l_upper_leg: 2.1684
+  l_lower_leg: 1.8324
+  l_ankle_1  : 0.6798
+  r_upper_leg: 2.1635
+  r_lower_leg: 1.8320
+  r_ankle_1  : 0.6803
+
+@GAZEBO_ASSIGNED_INERTIAS@
+
+XMLBlobs:
+  - |
+        <link name="base_link" />
+  - |
+        <joint name="base_fixed_joint" type="fixed">
+          <origin xyz="0 0 0" rpy="0 -0 0" />
+          <axis xyz="0 0 0" />
+          <parent link="base_link" />
+          <child link="root_link" />
+        </joint>
+  - |
+        <link name="l_foot_dh_frame"/>
+  - |
+        <joint name="l_foot_dh_frame_fixed_joint" type="fixed">
+          <origin xyz="0.0 0 0.004" rpy="0 1.5708 0" />
+          <axis xyz="0 0 0" />
+          <parent link="l_foot" />
+          <child link="l_foot_dh_frame" />
+        </joint>
+  - |
+        <link name="r_foot_dh_frame"/>
+  - |
+        <joint name="r_foot_dh_frame_fixed_joint" type="fixed">
+          <origin xyz="0.0 0 0.004" rpy="0 1.5708 0" />
+          <axis xyz="0 0 0" />
+          <parent link="r_foot" />
+          <child link="r_foot_dh_frame" />
+        </joint>
+  - |
+       
+        <link name="root_link_imu_frame"/>
+  - |
+        <joint name="root_link_imu_frame_fixed_joint" type="fixed">
+           <origin xyz="0.08515499999999998 -0.011000000000000022 -0.11230899999999999" rpy="-2.0943952105869323 -3.885780586188048e-16 -1.5707963267948963"/>
+           <parent link="root_link"/>
+           <child link="root_link_imu_frame"/>
+        </joint> 
+  - |
+        <gazebo reference="root_link">
+            <sensor name="root_link_imu_acc" type="imu">
+              <always_on>1</always_on>
+              <update_rate>400</update_rate>
+              <pose>0.08515499999999998 -0.011000000000000022 -0.11230899999999999 -2.0943952105869323 -3.885780586188048e-16 -1.5707963267948963</pose>
+              <plugin name="root_link_xsens_imu_plugin" filename="libgazebo_yarp_imu.so">
+                 <yarpConfigurationFile>model://@CONF_FILE_DIR@/gazebo_icub_xsens_inertial.ini</yarpConfigurationFile>
+              </plugin>
+            </sensor>
+        </gazebo>
+  - |
+        <sensor name="root_link_imu_acc" type="accelerometer">
+           <parent link="root_link"/>
+           <origin rpy="-2.0943952105869323 -3.885780586188048e-16 -1.5707963267948963" xyz="0.08515499999999998 -0.011000000000000022 -0.11230899999999999"/>
+        </sensor>
+  - |  
+        <gazebo reference="r_arm_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="l_arm_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="r_leg_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="l_leg_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="r_foot_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="l_foot_ft_sensor">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="r_elbow_turbine">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="l_elbow_turbine">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="l_jet_turbine">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="r_jet_turbine">
+          <disableFixedJointLumping>true</disableFixedJointLumping>
+        </gazebo>
+  - |
+        <gazebo reference="l_foot">
+          <collision> <surface> <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce> </surface> </collision>
+          <maxContacts>4</maxContacts>
+          <kp>18000000</kp>
+          <kd>100</kd>
+          <maxVel>100</maxVel>
+          <minDepth>0.0001</minDepth>
+          <mu1>1</mu1>
+          <mu2>1</mu2>
+          <fdir1>0 0 0</fdir1>
+        </gazebo>
+  - |
+        <gazebo reference="r_foot">
+          <collision> <surface> <bounce>
+            <restitution_coefficient>0</restitution_coefficient>
+            <threshold>100000</threshold>
+          </bounce> </surface> </collision>
+          <maxContacts>4</maxContacts>
+          <kp>18000000</kp>
+          <kd>100</kd>
+          <maxVel>100</maxVel>
+          <minDepth>0.0001</minDepth>
+          <mu1>1</mu1>
+          <mu2>1</mu2>
+          <fdir1>0 0 0</fdir1>
+        </gazebo>
+  - |
+        <gazebo>
+        <plugin name="iCub_yarp_gazebo_plugin_ACCpart" filename="libgazebo_yarp_distributedinertials.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/MTB/gazebo_icub_left_leg_mtb.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="iCub_yarp_gazebo_plugin_ACCpart" filename="libgazebo_yarp_distributedinertials.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/MTB/gazebo_icub_right_leg_mtb.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="iCub_yarp_gazebo_plugin_ACCpart" filename="libgazebo_yarp_distributedinertials.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/MTB/gazebo_icub_left_arm_mtb.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="iCub_yarp_gazebo_plugin_ACCpart" filename="libgazebo_yarp_distributedinertials.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/MTB/gazebo_icub_right_arm_mtb.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="iCub_yarp_gazebo_plugin_ACCpart" filename="libgazebo_yarp_distributedinertials.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/MTB/gazebo_icub_torso_mtb.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="controlboard_torso" filename="libgazebo_yarp_controlboard.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/gazebo_icub_torso.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="controlboard_head_without_eyes" filename="libgazebo_yarp_controlboard.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/gazebo_icub_head_without_eyes.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="controlboard_left_arm_no_hand" filename="libgazebo_yarp_controlboard.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/gazebo_icub_left_arm.ini</yarpConfigurationFile>
+          <initialConfiguration>-0.52 0.52 0 0.785</initialConfiguration>
+        </plugin>
+        <plugin name="controlboard_right_arm_no_hand" filename="libgazebo_yarp_controlboard.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/gazebo_icub_right_arm.ini</yarpConfigurationFile>
+          <initialConfiguration>-0.52 0.52 0 0.785</initialConfiguration>
+        </plugin>
+        <plugin name="controlboard_right_leg" filename="libgazebo_yarp_controlboard.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/gazebo_icub_right_leg.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="controlboard_left_leg" filename="libgazebo_yarp_controlboard.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/gazebo_icub_left_leg.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="apply_external_wrench" filename="libgazebo_yarp_externalwrench.so" >
+          <robotNamefromConfigFile>model://@CONF_FILE_DIR@/gazebo_icub_robotname.ini</robotNamefromConfigFile>
+        </plugin>
+        <plugin name="basestate" filename="libgazebo_yarp_basestate.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/base.ini</yarpConfigurationFile>
+        </plugin>
+        <plugin name="jets-plugin" filename="libjets-plugin-v1.so">
+          <yarpConfigurationFile>model://@CONF_FILE_DIR@/jets.ini</yarpConfigurationFile>
+        </plugin>
+        </gazebo>
+  - |
+        <gazebo reference="r_hip_pitch">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="r_hip_roll">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="r_hip_yaw">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="r_knee">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="r_ankle_pitch">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="r_ankle_roll">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="l_hip_pitch">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="l_hip_roll">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="l_hip_yaw">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="l_knee">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="l_ankle_pitch">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="l_ankle_roll">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="torso_pitch">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="torso_roll">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="torso_yaw">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="r_shoulder_pitch">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="r_shoulder_roll">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="r_shoulder_yaw">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="r_elbow">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="l_shoulder_pitch">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="l_shoulder_roll">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="l_shoulder_yaw">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="l_elbow">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="neck_pitch">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="neck_roll">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>
+  - |
+        <gazebo reference="neck_yaw">
+           <implicitSpringDamper>1</implicitSpringDamper>
+        </gazebo>

@@ -1,0 +1,25 @@
+name: ironcub_env
+channels:
+  - conda-forge
+  - robotology
+dependencies:
+  - git
+  - git-lfs
+  - compilers 
+  - cmake 
+  - pkg-config 
+  - make 
+  - ninja
+  - icub-models 
+  - idyntree-matlab-bindings
+  - wb-toolbox 
+  - whole-body-controllers 
+  - whole-body-estimators 
+  - gazebo 
+  - gazebo-yarp-plugins 
+  - opencv
+  - pyyaml=5
+  - catkin_pkg
+  - pip:
+    - git+https://github.com/ros/urdf_parser_py@31474b9baaf7c3845b40e5a9aa87d5900a2282c3
+    - git+https://github.com/robotology/simmechanics-to-urdf@v0.4.1

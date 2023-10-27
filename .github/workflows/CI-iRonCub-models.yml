@@ -1,0 +1,89 @@
+name: Debug iRonCub Models
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 3 * * 1'
+
+jobs:
+
+  build:
+    name: 'iRonCub Model Build'
+    runs-on: ubuntu-latest
+
+    steps:
+        
+    - uses: actions/checkout@v3    
+    - uses: conda-incubator/setup-miniconda@v2
+      with:
+        miniforge-variant: Mambaforge
+        miniforge-version: latest
+        channels: conda-forge,robotology
+        channel-priority: true
+        environment-file: environment.yml
+
+    - name: Conda status
+      shell: bash -l {0}
+      run: |
+        conda info
+        conda list
+        conda config --show-sources
+        conda config --show
+        printenv | sort
+
+    - name: Setup git
+      shell: bash -l {0}
+      run: |
+        git config --global --add safe.directory /__w/component_ironcub/component_ironcub
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git status
+
+    - name: Build models
+      shell: bash -l {0}
+      run: |
+        mkdir build
+        cd build
+        cmake .. -DENABLE_MK1_MODEL_GENERATION=ON -DENABLE_MK1_1_MODEL_GENERATION=ON
+        make
+
+    - name: Compare URDFs
+      shell: bash -l {0}
+      if: github.event_name != 'pull_request'
+      run: |
+        git status
+        if git diff-index --quiet HEAD; then
+            echo $'\nThe generated URDFs are equal\n'
+         else
+            echo "::warning::The generated URDFs are different"
+            git diff
+         fi
+
+    - name: Print robot mass
+      shell: bash -l {0}
+      run: |
+        find models -name "model.urdf" | while read -r URDF_FILE; do
+          echo ""
+          echo "Processing: $URDF_FILE"
+          idyntree-model-info -m "$URDF_FILE" --total-mass
+        done
+
+    - name: Push URDFs
+      shell: bash -l {0}
+      if: github.event_name == 'push' &&  github.ref != 'refs/heads/master' && contains(github.event.head_commit.message, '[urdf]')
+      run: |
+        cd models
+        git status
+        git add *.urdf
+        git pull
+        if git diff-index --quiet HEAD; then
+            echo "No URDF uploaded"
+         else
+            echo "New URDF uploaded"
+            # create commit message
+            git_hash=$(git rev-parse --short "$GITHUB_SHA")
+            echo "Automatic build of iRonCub_Model.urdf - Triggered by ${git_hash}" >> ${GITHUB_WORKSPACE}/deploy_commit_message
+            git commit -a -F ${GITHUB_WORKSPACE}/deploy_commit_message
+            git push
+         fi
