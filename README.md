@@ -43,8 +43,10 @@ On **Linux** or **macOS**, run:
 cd ironcub_mk1_software
 mkdir build
 cd build
-cmake .. -DCMAKE_INSTALL_PREFIX="/path/to/desired/install/dir" .
+cmake .. -DCMAKE_INSTALL_PREFIX=</path/to/desired/install/dir>.
 make install
+echo "source </path/to/desired/install/dir>/share/ironcub/setup-v1.sh" > "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_activate.sh"
+chmod +x "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_activate.sh"
 ```
 
 On **Windows**, run:
@@ -53,62 +55,28 @@ On **Windows**, run:
 cd ironcub_mk1_software
 mkdir build
 cd build
-cmake .. -G"Visual Studio 16 2019" -DCMAKE_INSTALL_PREFIX="\path\to\desired\install\dir"
+cmake .. -G"Visual Studio 17 2022" -DCMAKE_INSTALL_PREFIX=<\path\to\desired\install\dir>
 cmake --build . --config Release --target INSTALL
+echo call "<path\to\desired\install\dir>\share\ironcub\setup-v1.sh" > "%CONDA_PREFIX%\etc\conda\activate.d\ironcub_activate.bat"
 ```
 
 > [!warning]
 > If you haven't configured [`git lfs`](https://git-lfs.com/), run `git lfs install` and `git lfs pull` inside the `ironcub_mk1_software` folder.
 
+## Running the repo on Ubuntu and Windows
 
-## Running the repo on Windows
-
-To run the repository on Windows it is necessary to properly setup a Windows terminal where commands are executed. First, create a file `setup.bat` with the following content:
-
-```cmd
-call mamba activate <conda-environment-name>
-call <path-to-the-robotology-superbuild>\robotology-superbuild\build\install\share\robotology-superbuild\setup.bat
-
-rem From the iRonCub Software documentation
-call <\path\to\desired\install\dir>\share\ironcub\setup-v1.bat
-
-rem Unset the MESA variable (maybe useless on Windows)
-set MESA_LOADER_DRIVER_OVERRIDE=
-```
-
-In this way the `batch` file will load both the setup script from the `robotology-superbuild` and the `ironcub_mk1_software`. Then, download **Windows Terminal** from the _Microsoft Store_.
-
-Launch the Windows Terminal app, go on `settings` and `Create a new profile`, then create a new profile specifying the new name and the tab-name.
-
-Select `Open Json file`.
-
-In the `settings.json` file search for `"list"` inside `"profiles"`, there in the newly generated terminal (easy to find by the `"name"` variable) set the value for `"commandline"` as:
+Open the terminal and activate the conda environment
 
 ```bash
-"commandline": "cmd.exe /k \"<path-to-the-setup-file>\\setup.bat\""
+mamba activate <conda-environment-name>
 ```
 
-**IMPORTANT: in the `"commandline"` path be sure to use `\\` as path separator for the correct `.json` file syntax.**
-
-Now the Windows Terminal has the `setup.bat` file acting in a similar way to the `.bashrc` file on _Linux_ OS.
-
-## Running the repo on Ubuntu
-
-Add to your `.bashrc` file the following line:
-
-```bash
-source $IRONCUB_INSTALL_PREFIX/share/ironcub/setup-v1.sh
-```
-
-This `sh` file contains the paths that are needed to use this repo. 
-
-**For Gazebo simulations:**
-
-To better understand which variables are set by the `setup-v1.sh` script, see also these READMEs:
-
-- https://github.com/ami-iit/ironcub_mk1_software/tree/porting_mk1_mk1_1/models/worlds#usage
-- https://github.com/ami-iit/ironcub_mk1_software/blob/porting_mk1_mk1_1/lib/gazebo/README.md#setting-up-env-variables
-- https://github.com/ami-iit/ironcub_mk1_software/tree/porting_mk1_mk1_1/models#installation-and-usage
+> [!NOTE]
+> Activating the environment will automatically source `setup-v1.sh` (`setup-v1.bat` for windows).  If you want to deactivate the sourced variables, you should open a new terminal.
+> To better understand which variables are set by the `setup-v1.sh` script, see also these READMEs:
+> - https://github.com/ami-iit/ironcub_mk1_software/tree/porting_mk1_mk1_1/models/worlds#usage
+> - https://github.com/ami-iit/ironcub_mk1_software/blob/porting_mk1_mk1_1/lib/gazebo/README.md#setting-up-env-variables
+> - https://github.com/ami-iit/ironcub_mk1_software/tree/porting_mk1_mk1_1/models#installation-and-usage
 
 ## Content
 
