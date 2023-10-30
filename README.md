@@ -30,7 +30,6 @@ Please refer to [the documentation in `robotology-superbuild`](https://github.co
 
 ```sh
 mamba env create -n <conda-environment-name> --file environment.yml
-mamba activate  <conda-environment-name>
 ```
 
 The installation procedure has been tested on Ubuntu 20.04 and Windows 10.
@@ -40,6 +39,7 @@ The installation procedure has been tested on Ubuntu 20.04 and Windows 10.
 On **Linux** or **macOS**, run:
 
 ```bash
+mamba activate  <conda-environment-name>
 cd ironcub_mk1_software
 mkdir build
 cd build
@@ -52,6 +52,7 @@ chmod +x "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_activate.sh"
 On **Windows**, run:
 
 ```cmd
+mamba activate  <conda-environment-name>
 cd ironcub_mk1_software
 mkdir build
 cd build
