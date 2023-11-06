@@ -26,13 +26,14 @@ A possible way for installing all this dependencies, except Matlab and Gazebo, i
 An alternative is the usage of a [conda package manager](https://docs.conda.io) which provides binary packages for Linux, macOS and Windows.
 Please refers to the next sections for more details.
 
-## Installation via robotology-superbuild (Linux Only)
+## Installation
+### Installation via robotology-superbuild (Linux Only)
 
 First, you must install [matlab](https://it.mathworks.com/products/matlab.html) and [Gazebo](https://classic.gazebosim.org/download).
 Then, you have to configure the other dependencies via [robotology-superbuild](https://github.com/robotology/robotology-superbuild) making sure to enable the `ROBOTOLOGY_ENABLE_DYNAMICS`, `ROBOTOLOGY_USES_GAZEBO` CMake options, and checkout to tag [`v2023.08.0`](https://github.com/robotology/robotology-superbuild/releases/tag/v2023.08.0).
 After setting up the `robotology-superbuild`, proceed to set up this repository.
 
-### Compilation
+#### Compilation
 
 Execute the following commands in your terminal:
 
@@ -45,7 +46,7 @@ cmake .. -DCMAKE_INSTALL_PREFIX=</path/to/desired/install/dir>
 make install
 ```
 
-### Using the Repository
+#### Using the Repository
 
 In the first use, add the following line to your `.bashrc` file:
 
@@ -53,7 +54,7 @@ In the first use, add the following line to your `.bashrc` file:
 source $IRONCUB_INSTALL_PREFIX/share/ironcub/setup-v1.sh
 ```
 
-## Installation with Conda (Linux and Windows)
+### Installation with Conda (Linux and Windows)
 
 Start by installing [Matlab](https://it.mathworks.com/products/matlab.html).
 Next, you have to install and configure a conda distribution following [the documentation in `robotology-superbuild`](https://github.com/robotology/robotology-superbuild/blob/7d79a44e90fbcedf137ab6c5c1d83b943d6e6839/doc/conda-forge.md). Then, once your environment is set, you can run the following command to install the required dependencies.
@@ -64,7 +65,7 @@ cd ironcub_mk1_software
 mamba env create -n <conda-environment-name> --file environment.yml
 ```
 
-### Compilation
+#### Compilation
 
 For **Linux** or **macOS**, execute the following commands:
 
@@ -95,7 +96,7 @@ echo call "<path\to\desired\install\dir>\share\ironcub\setup_v1.bat" > "%CONDA_P
 > [!warning]
 > If you haven't configured [`git lfs`](https://git-lfs.com/), run `git lfs install` and `git lfs pull` inside the `ironcub_mk1_software` folder.
 
-### Using the Repository
+#### Using the Repository
 
 Open the terminal and activate the conda environment
 
