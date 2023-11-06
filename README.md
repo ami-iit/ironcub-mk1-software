@@ -45,8 +45,8 @@ mkdir build
 cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=</path/to/desired/install/dir>.
 make install
-echo "source </path/to/desired/install/dir>/share/ironcub/setup_v1.sh" > "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_activate.sh"
-chmod +x "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_activate.sh"
+echo "source </path/to/desired/install/dir>/share/ironcub/setup_v1.sh" > "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_setup.sh"
+chmod +x "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_setup.sh"
 ```
 
 On **Windows**, run:
@@ -58,7 +58,7 @@ mkdir build
 cd build
 cmake .. -G"Visual Studio 17 2022" -DCMAKE_INSTALL_PREFIX=<\path\to\desired\install\dir>
 cmake --build . --config Release --target INSTALL
-echo call "<path\to\desired\install\dir>\share\ironcub\setup_v1.bat" > "%CONDA_PREFIX%\etc\conda\activate.d\ironcub_activate.bat"
+echo call "<path\to\desired\install\dir>\share\ironcub\setup_v1.bat" > "%CONDA_PREFIX%\etc\conda\activate.d\ironcub_setup.bat"
 ```
 
 > [!warning]
