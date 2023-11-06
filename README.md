@@ -34,7 +34,7 @@ After setting up the `robotology-superbuild`, proceed to set up this repository.
 
 ### Compilation
 
-For **Linux** or **macOS**, execute the following commands in your terminal:
+Execute the following commands in your terminal:
 
 ```bash
 git clone https://github.com/ami-iit/ironcub_mk1_software.git
@@ -47,7 +47,7 @@ make install
 
 ### Using the Repository
 
-Add the following line to your `.bashrc` file:
+In the first use, add the following line to your `.bashrc` file:
 
 ```bash
 source $IRONCUB_INSTALL_PREFIX/share/ironcub/setup-v1.sh
