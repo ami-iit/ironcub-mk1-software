@@ -6,9 +6,7 @@ This repo contains libraries, plugins and controllers to perform dynamics simula
 
 https://user-images.githubusercontent.com/12396934/219008717-117eb146-cca6-4056-8dd1-9a06100e97d1.mp4
 
-## Installation
-
-### Dependencies
+## Dependencies
 
 - [YARP](https://github.com/robotology/yarp);
 - [gazebo-yarp-plugins](https://github.com/robotology/gazebo-yarp-plugins);
@@ -20,39 +18,72 @@ https://user-images.githubusercontent.com/12396934/219008717-117eb146-cca6-4056-
 - [Eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page);
 - [matlab-whole-body-simulator](https://github.com/ami-iit/matlab-whole-body-simulator).
 
-**Note:** the lowest suppported Matlab version is `R2021b`, and the lowest supported Gazebo version is `v.8`. For controllers that use Simulink library blocks from `matlab-whole-body-simulator`, the lowest supported Matlab version is `R2022b`.
+> [!NOTE]
+> The oldest suppported Matlab version is `R2021b`, and the oldest supported Gazebo version is `v.8`. For controllers that use Simulink library blocks from `matlab-whole-body-simulator`, the lowest supported Matlab version is `R2022b`.
 
-The **highly recommended** way for installing all this dependencies (but Matlab and Gazebo) is to use the [robotology-superbuild](https://github.com/robotology/robotology-superbuild), making sure to enable the `ROBOTOLOGY_ENABLE_DYNAMICS` and `ROBOTOLOGY_USES_GAZEBO` CMake options. 
 
-A quick way to install the dependencies is via [conda package manager](https://docs.conda.io) which provides binary packages for Linux, macOS and Windows of the software contained in the robotology-superbuild. Relying on the community-maintained [`conda-forge`](https://conda-forge.org/) channel and also the `robotology` conda channel.
+A possible way for installing all this dependencies, except Matlab and Gazebo, is to use the [robotology-superbuild](https://github.com/robotology/robotology-superbuild).
+An alternative is the usage of a [conda package manager](https://docs.conda.io) which provides binary packages for Linux, macOS and Windows.
+Please refers to the next sections for more details.
 
-Please refer to [the documentation in `robotology-superbuild`](https://github.com/robotology/robotology-superbuild/blob/7d79a44e90fbcedf137ab6c5c1d83b943d6e6839/doc/conda-forge.md) to install and configure a conda distribution. Then, once your environment is set, you can run the following command to install the required dependencies.
+## Installation via robotology-superbuild (Linux Only)
 
-```sh
-mamba env create -n <conda-environment-name> --file environment.yml
-```
+First, you must install [matlab](https://it.mathworks.com/products/matlab.html) and [Gazebo](https://classic.gazebosim.org/download).
+Then, you have to configure the other dependencies via [robotology-superbuild](https://github.com/robotology/robotology-superbuild) making sure to enable the `ROBOTOLOGY_ENABLE_DYNAMICS`, `ROBOTOLOGY_USES_GAZEBO` CMake options, and checkout to tag [`v2023.08.0`](https://github.com/robotology/robotology-superbuild/releases/tag/v2023.08.0).
+After setting up the `robotology-superbuild`, proceed to set up this repository.
 
-The installation procedure has been tested on Ubuntu 20.04 and Windows 10.
+### Compilation
 
-## Compilation
-
-On **Linux** or **macOS**, run:
+For **Linux** or **macOS**, execute the following commands in your terminal:
 
 ```bash
-mamba activate  <conda-environment-name>
+git clone https://github.com/ami-iit/ironcub_mk1_software.git
 cd ironcub_mk1_software
 mkdir build
 cd build
-cmake .. -DCMAKE_INSTALL_PREFIX=</path/to/desired/install/dir>.
+cmake .. -DCMAKE_INSTALL_PREFIX=</path/to/desired/install/dir>
+make install
+```
+
+### Using the Repository
+
+Add the following line to your `.bashrc` file:
+
+```bash
+source $IRONCUB_INSTALL_PREFIX/share/ironcub/setup-v1.sh
+```
+
+## Installation with Conda (Linux and Windows)
+
+Start by installing [Matlab](https://it.mathworks.com/products/matlab.html).
+Next, you have to install and configure a conda distribution following [the documentation in `robotology-superbuild`](https://github.com/robotology/robotology-superbuild/blob/7d79a44e90fbcedf137ab6c5c1d83b943d6e6839/doc/conda-forge.md). Then, once your environment is set, you can run the following command to install the required dependencies.
+
+```sh
+git clone https://github.com/ami-iit/ironcub_mk1_software.git
+cd ironcub_mk1_software
+mamba env create -n <conda-environment-name> --file environment.yml
+```
+
+### Compilation
+
+For **Linux** or **macOS**, execute the following commands:
+
+```bash
+
+mamba activate <conda-environment-name>
+cd ironcub_mk1_software
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=</path/to/desired/install/dir>
 make install
 echo "source </path/to/desired/install/dir>/share/ironcub/setup_v1.sh" > "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_setup.sh"
 chmod +x "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_setup.sh"
 ```
 
-On **Windows**, run:
+For **Windows**, run these commands:
 
 ```cmd
-mamba activate  <conda-environment-name>
+mamba activate <conda-environment-name>
 cd ironcub_mk1_software
 mkdir build
 cd build
@@ -64,7 +95,7 @@ echo call "<path\to\desired\install\dir>\share\ironcub\setup_v1.bat" > "%CONDA_P
 > [!warning]
 > If you haven't configured [`git lfs`](https://git-lfs.com/), run `git lfs install` and `git lfs pull` inside the `ironcub_mk1_software` folder.
 
-## Running the repo on Ubuntu and Windows
+### Using the Repository
 
 Open the terminal and activate the conda environment
 
