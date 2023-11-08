@@ -109,7 +109,7 @@
         <initialConfiguration>0 0 0 0 0 0</initialConfiguration>
       </plugin>
       <include>
-        <uri>model://iRonCub-Mk1_1_Gazebo_v1</uri>
+        <uri>model://iRonCub-Mk1_1_Gazebo</uri>
       </include> 
     </model>
     <model name='collapsed_house'>

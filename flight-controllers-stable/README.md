@@ -23,11 +23,11 @@ It is assumed that [all dependencies](../README.md#installation) have been corre
 **Before starting:** set the `YARP_ROBOT_NAME` env. variable in your `.bashrc` file to be the iRonCub robot name, e.g.:
 
 ```
-export YARP_ROBOT_NAME=iRonCub-Mk1_1_Gazebo_v1 
+export YARP_ROBOT_NAME=iRonCub-Mk1_1_Gazebo 
 ```
 or
 ```
-export YARP_ROBOT_NAME=iRonCub-Mk1_Gazebo_v1
+export YARP_ROBOT_NAME=iRonCub-Mk1_Gazebo
 ```
 
 1) open a terminal and run:
@@ -78,7 +78,7 @@ export YARP_ROBOT_NAME=iRonCub-Mk1_Gazebo_v1
    ```
    It assumes that you have installed the joypad dependencies, more info [here](https://github.com/robotology/walking-controllers#how-to-run-the-joypad-module).
 
-   6c) To perform gain tuning and optimize the performances of your controller, check e.g. the parameters in [this file](momentum-based-flight-sim-gazebo/app/robots/iRonCub-Mk1_1_Gazebo_v1/gainsAndParameters.m).
+   6c) To perform gain tuning and optimize the performances of your controller, check e.g. the parameters in [this file](momentum-based-flight-sim-gazebo/app/robots/iRonCub-Mk1_1_Gazebo/gainsAndParameters.m).
 
 ### Matlab Simulations
 
