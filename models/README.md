@@ -81,3 +81,4 @@ You can use the following command:
 yarprobotinterface --config launch-wholebodydynamics-iRonCub.xml
 ```
 (**warning:** by default the FT sensors offsets are set to zero by ```<param name="startWithZeroFTSensorOffsets">true</param>``` [here](./iRonCub-Mk1/iRonCub/robots/iRonCub-Mk1_Gazebo/estimators/wholebodydynamics-external-iRonCub.xml#L18) for `iRonCub-Mk1_Gazebo` model and [here](./iRonCub-Mk1_1/iRonCub/robots/iRonCub-Mk1_1_Gazebo/estimators/wholebodydynamics-external-iRonCub.xml#L18) for `iRonCub-Mk1_1_Gazebo` model).
+ 
