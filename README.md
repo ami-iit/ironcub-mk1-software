@@ -106,7 +106,7 @@ mamba activate <conda-environment-name>
 
 > [!NOTE]
 > Activating the environment will automatically source `setup_v1.sh` (`setup_v1.bat` for windows).  If you want to deactivate the sourced variables, you should open a new terminal.
-> To better understand which variables are set by the `setup_v1.sh` script, see also these READMEs: [worlds](models/worlds/README.md#usage), [gazebo](lib/gazebo/README.md#setting-up-env-variables), and [models](models/README.md#installation-and-usage).
+> To better understand which variables are set by the `setup_v1.sh` script, see also these READMEs: [worlds](models/worlds#usage), [gazebo](lib/gazebo#setting-up-env-variables), and [models](models#installation-and-usage).
 
 ## Content
 
