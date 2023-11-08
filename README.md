@@ -71,9 +71,6 @@ call <path-to-the-robotology-superbuild>\robotology-superbuild\build\install\sha
 
 rem From the iRonCub Software documentation
 call <\path\to\desired\install\dir>\share\ironcub\setup-v1.bat
-
-rem Unset the MESA variable (maybe useless on Windows)
-set MESA_LOADER_DRIVER_OVERRIDE=
 ```
 
 In this way the `batch` file will load both the setup script from the `robotology-superbuild` and the `ironcub_mk1_software`. Then, download **Windows Terminal** from the _Microsoft Store_.
@@ -106,9 +103,9 @@ This `sh` file contains the paths that are needed to use this repo.
 
 To better understand which variables are set by the `setup-v1.sh` script, see also these READMEs:
 
-- https://github.com/ami-iit/ironcub_mk1_software/tree/porting_mk1_mk1_1/models/worlds#usage
-- https://github.com/ami-iit/ironcub_mk1_software/blob/porting_mk1_mk1_1/lib/gazebo/README.md#setting-up-env-variables
-- https://github.com/ami-iit/ironcub_mk1_software/tree/porting_mk1_mk1_1/models#installation-and-usage
+- [`models/worlds#usage`](models/worlds#usage)
+- [`lib/gazebo/README.md#setting-up-env-variables`](lib/gazebo/README.md#setting-up-env-variables)
+- [`models#installation-and-usage`](models#installation-and-usage)
 
 ## Content
 
