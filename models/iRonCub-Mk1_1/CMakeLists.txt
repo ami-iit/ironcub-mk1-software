@@ -9,7 +9,7 @@ if(ENABLE_MK1_1_MODEL_GENERATION)
 	  cmake_policy(SET CMP0046 NEW)
 	endif()
 
-	set(BUILD_PREFIX "models/iRonCub-Mk1_1_v1/iRonCub")
+	set(BUILD_PREFIX "models/iRonCub-Mk1_1/iRonCub")
 	add_subdirectory(resources)
 
 	add_custom_target(generate-models-Mk1_1 ALL)
