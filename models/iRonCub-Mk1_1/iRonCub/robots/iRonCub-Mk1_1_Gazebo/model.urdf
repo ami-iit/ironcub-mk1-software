@@ -8,7 +8,7 @@
     <visual>
       <origin xyz="-0.036399999999999995 0 0.032" rpy="1.5707963267948961 0 -1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_root_link_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_root_link_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="green">
         <color rgba="0 1 0 1"/>
@@ -17,7 +17,7 @@
     <collision>
       <origin xyz="-0.036399999999999995 0 0.032" rpy="1.5707963267948961 0 -1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_root_link_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_root_link_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -30,7 +30,7 @@
     <visual>
       <origin xyz="0.027046299809264998 0.03199999999999968 0.036400000000000286" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_lap_belt_1_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_lap_belt_1_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="black">
         <color rgba="0 0 0 1"/>
@@ -39,7 +39,7 @@
     <collision>
       <origin xyz="0.027046299809264998 0.03199999999999968 0.036400000000000286" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_lap_belt_1_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_lap_belt_1_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -60,7 +60,7 @@
     <visual>
       <origin xyz="0 0.1433 0.03865310000000001" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_lap_belt_2_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_lap_belt_2_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="red">
         <color rgba="1 0 0 1"/>
@@ -69,7 +69,7 @@
     <collision>
       <origin xyz="0 0.1433 0.03865310000000001" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_lap_belt_2_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_lap_belt_2_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -90,7 +90,7 @@
     <visual>
       <origin xyz="0 0.07529999999999999 -0.024189000000000002" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_chest_bb_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_chest_bb_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="blue">
         <color rgba="0 0 1 1"/>
@@ -99,7 +99,7 @@
     <collision>
       <origin xyz="0 0.07529999999999999 -0.024189000000000002" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_chest_bb_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_chest_bb_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -127,7 +127,7 @@
     <visual>
       <origin xyz="0 -0.07999685380588686 -0.02950066775785877" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_neck_1_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_neck_1_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="yellow">
         <color rgba="1 1 0 1"/>
@@ -136,7 +136,7 @@
     <collision>
       <origin xyz="0 -0.07999685380588686 -0.02950066775785877" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_neck_1_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_neck_1_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -157,7 +157,7 @@
     <visual>
       <origin xyz="0 -0.08949671828589884 -0.05030070166940581" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_neck_2_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_neck_2_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="pink">
         <color rgba="1 0 1 1"/>
@@ -166,7 +166,7 @@
     <collision>
       <origin xyz="0 -0.08949671828589884 -0.05030070166940581" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_neck_2_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_neck_2_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -187,7 +187,7 @@
     <visual>
       <origin xyz="0 -0.06715325036879602 -0.029500695130043886" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_head_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_head_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="cyan">
         <color rgba="0 1 1 1"/>
@@ -196,7 +196,7 @@
     <collision>
       <origin xyz="0 -0.06715325036879602 -0.029500695130043886" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_head_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_head_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -224,7 +224,7 @@
     <visual>
       <origin xyz="-0.025736102582417597 -0.19143293014767754 -0.18940019848002188" rpy="-1.570796323266697 0 -2.199114262384067"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_p220_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_p220_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="green">
         <color rgba="0 1 0 1"/>
@@ -233,7 +233,7 @@
     <collision>
       <origin xyz="-0.025736102582417597 -0.19143293014767754 -0.18940019848002188" rpy="-1.570796323266697 0 -2.199114262384067"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_p220_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_p220_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -252,7 +252,7 @@
     <visual>
       <origin xyz="-0.025736724487067854 -0.19143254640693674 -0.1894001984800269" rpy="-1.5707963232667206 0 -2.199113213812309"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_p220_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_p220_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="white">
         <color rgba="1 1 1 1"/>
@@ -261,7 +261,7 @@
     <collision>
       <origin xyz="-0.025736724487067854 -0.19143254640693674 -0.1894001984800269" rpy="-1.5707963232667206 0 -2.199113213812309"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_p220_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_p220_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -280,7 +280,7 @@
     <visual>
       <origin xyz="0.09900705928224204 0 -0.026528748755708542" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_shoulder_1_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_shoulder_1_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="dblue">
         <color rgba="0 0 0.8 1"/>
@@ -289,7 +289,7 @@
     <collision>
       <origin xyz="0.09900705928224204 0 -0.026528748755708542" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_shoulder_1_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_shoulder_1_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -310,7 +310,7 @@
     <visual>
       <origin xyz="0.10658780856753212 2.3191471541783582e-07 -0.040739212117532925" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_shoulder_2_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_shoulder_2_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="dgreen">
         <color rgba="0.1 0.8 0.1 1"/>
@@ -319,7 +319,7 @@
     <collision>
       <origin xyz="0.10658780856753212 2.3191471541783582e-07 -0.040739212117532925" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_shoulder_2_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_shoulder_2_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -340,7 +340,7 @@
     <visual>
       <origin xyz="0.13193387916408805 0 -0.03535156676465448" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_upper_arm_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_upper_arm_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="gray">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -349,7 +349,7 @@
     <collision>
       <origin xyz="0.13193387916408805 0 -0.03535156676465448" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_upper_arm_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_upper_arm_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -370,7 +370,7 @@
     <visual>
       <origin xyz="-0.014921199999999996 -1.3999999999944612e-05 -0.19329999999999997" rpy="0 1.30899700696774 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_elbow_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_elbow_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="green">
         <color rgba="0 1 0 1"/>
@@ -379,7 +379,7 @@
     <collision>
       <origin xyz="-0.014921199999999996 -1.3999999999944612e-05 -0.19329999999999997" rpy="0 1.30899700696774 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_elbow_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_elbow_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -398,7 +398,7 @@
     <visual>
       <origin xyz="0.2594108582522262 0 -0.08495647373969467" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_elbow_prosup_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_elbow_prosup_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="black">
         <color rgba="0 0 0 1"/>
@@ -407,7 +407,7 @@
     <collision>
       <origin xyz="0.2594108582522262 0 -0.08495647373969467" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_elbow_prosup_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_elbow_prosup_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -428,7 +428,7 @@
     <visual>
       <origin xyz="0.0535333863382156 -0.06598880532406108 -0.5463170001871684" rpy="0 1.3089970025555984 1.2042770543747778"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_elbow_p160_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_elbow_p160_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="red">
         <color rgba="1 0 0 1"/>
@@ -437,7 +437,7 @@
     <collision>
       <origin xyz="0.0535333863382156 -0.06598880532406108 -0.5463170001871684" rpy="0 1.3089970025555984 1.2042770543747778"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_elbow_p160_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_elbow_p160_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -456,7 +456,7 @@
     <visual>
       <origin xyz="0.1150712 0.088999999809267 -0.20469949999999998" rpy="3.141592653589793 0 1.5707963267948966"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_chest_aruco_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_chest_aruco_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="blue">
         <color rgba="0 0 1 1"/>
@@ -465,7 +465,7 @@
     <collision>
       <origin xyz="0.1150712 0.088999999809267 -0.20469949999999998" rpy="3.141592653589793 0 1.5707963267948966"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_chest_aruco_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_chest_aruco_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -484,7 +484,7 @@
     <visual>
       <origin xyz="-0.09900705928224206 0 -0.026528748755708542" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_shoulder_1_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_shoulder_1_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="yellow">
         <color rgba="1 1 0 1"/>
@@ -493,7 +493,7 @@
     <collision>
       <origin xyz="-0.09900705928224206 0 -0.026528748755708542" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_shoulder_1_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_shoulder_1_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -514,7 +514,7 @@
     <visual>
       <origin xyz="-0.1065877085675622 1.2838942596571368e-07 -0.040739585322631236" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_shoulder_2_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_shoulder_2_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="pink">
         <color rgba="1 0 1 1"/>
@@ -523,7 +523,7 @@
     <collision>
       <origin xyz="-0.1065877085675622 1.2838942596571368e-07 -0.040739585322631236" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_shoulder_2_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_shoulder_2_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -544,7 +544,7 @@
     <visual>
       <origin xyz="-0.13190103768539774 0 -0.03534276691934719" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_upper_arm_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_upper_arm_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="cyan">
         <color rgba="0 1 1 1"/>
@@ -553,7 +553,7 @@
     <collision>
       <origin xyz="-0.13190103768539774 0 -0.03534276691934719" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_upper_arm_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_upper_arm_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -574,7 +574,7 @@
     <visual>
       <origin xyz="-0.014921196617346701 -1.2999101713692673e-05 -0.19330000026117394" rpy="0 -1.308996989468287 -3.141592653589725"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_elbow_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_elbow_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="green">
         <color rgba="0 1 0 1"/>
@@ -583,7 +583,7 @@
     <collision>
       <origin xyz="-0.014921196617346701 -1.2999101713692673e-05 -0.19330000026117394" rpy="0 -1.308996989468287 -3.141592653589725"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_elbow_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_elbow_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -602,7 +602,7 @@
     <visual>
       <origin xyz="-0.2594108581625139 -0.01998700126661261 -0.08495647371564186" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_elbow_prosup_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_elbow_prosup_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="white">
         <color rgba="1 1 1 1"/>
@@ -611,7 +611,7 @@
     <collision>
       <origin xyz="-0.2594108581625139 -0.01998700126661261 -0.08495647371564186" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_elbow_prosup_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_elbow_prosup_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -632,7 +632,7 @@
     <visual>
       <origin xyz="0.05353403591556051 -0.06598916071249288 -0.5463169989741233" rpy="-1.5066317990385903e-06 1.3089971979456438 1.2042754137722869"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_elbow_p160_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_elbow_p160_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="dblue">
         <color rgba="0 0 0.8 1"/>
@@ -641,7 +641,7 @@
     <collision>
       <origin xyz="0.05353403591556051 -0.06598916071249288 -0.5463169989741233" rpy="-1.5066317990385903e-06 1.3089971979456438 1.2042754137722869"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_elbow_p160_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_elbow_p160_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -660,7 +660,7 @@
     <visual>
       <origin xyz="0.04285150000005946 -0.025999999999999673 0.15191299999998345" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_hip_1_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_hip_1_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="dgreen">
         <color rgba="0.1 0.8 0.1 1"/>
@@ -669,7 +669,7 @@
     <collision>
       <origin xyz="0.04285150000005946 -0.025999999999999673 0.15191299999998345" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_hip_1_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_hip_1_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -690,7 +690,7 @@
     <visual>
       <origin xyz="0.04285149980932397 -0.07010000000000878 0.15191299999997981" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_hip_2_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_hip_2_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="gray">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -699,7 +699,7 @@
     <collision>
       <origin xyz="0.04285149980932397 -0.07010000000000878 0.15191299999997981" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_hip_2_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_hip_2_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -720,7 +720,7 @@
     <visual>
       <origin xyz="0.04370906139999997 0.07010002460000003 -0.22621299999998065" rpy="-1.5707963267948961 0 -1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_upper_thigh_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_upper_thigh_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="green">
         <color rgba="0 1 0 1"/>
@@ -729,7 +729,7 @@
     <collision>
       <origin xyz="0.04370906139999997 0.07010002460000003 -0.22621299999998065" rpy="-1.5707963267948961 0 -1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_upper_thigh_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_upper_thigh_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -748,7 +748,7 @@
     <visual>
       <origin xyz="0.04370906139999997 -0.07010002459999994 0.24081299999999994" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_thigh_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_thigh_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="black">
         <color rgba="0 0 0 1"/>
@@ -757,7 +757,7 @@
     <collision>
       <origin xyz="0.04370906139999997 -0.07010002459999994 0.24081299999999994" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_thigh_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_thigh_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -792,7 +792,7 @@
     <visual>
       <origin xyz="0.04370906139999997 -0.07010002479999991 0.38663799999999987" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_shank_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_shank_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="red">
         <color rgba="1 0 0 1"/>
@@ -801,7 +801,7 @@
     <collision>
       <origin xyz="0.04370906139999997 -0.07010002479999991 0.38663799999999987" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_shank_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_shank_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -822,7 +822,7 @@
     <visual>
       <origin xyz="0.04370906139999997 -0.07010002479999985 0.5871379999999998" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_ankle_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_ankle_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="blue">
         <color rgba="0 0 1 1"/>
@@ -831,7 +831,7 @@
     <collision>
       <origin xyz="0.04370906139999997 -0.07010002479999985 0.5871379999999998" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_ankle_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_ankle_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -852,7 +852,7 @@
     <visual>
       <origin xyz="0.04368169961858297 -0.07017520019076885 0.5871379999999998" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_foot_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_foot_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="yellow">
         <color rgba="1 1 0 1"/>
@@ -861,7 +861,7 @@
     <collision>
       <origin xyz="0.04368169961858297 -0.07017520019076885 0.5871379999999998" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_foot_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_foot_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -882,7 +882,7 @@
     <visual>
       <origin xyz="0.04720906119999997 0.07010002480000013 -0.6474380002860819" rpy="-1.5707963267948961 0 -1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_l_sole_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_l_sole_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="pink">
         <color rgba="1 0 1 1"/>
@@ -945,7 +945,7 @@
     <visual>
       <origin xyz="0.04285150000011213 0.025999999999999232 0.1519129999999679" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_hip_1_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_hip_1_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="cyan">
         <color rgba="0 1 1 1"/>
@@ -954,7 +954,7 @@
     <collision>
       <origin xyz="0.04285150000011213 0.025999999999999232 0.1519129999999679" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_hip_1_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_hip_1_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -975,7 +975,7 @@
     <visual>
       <origin xyz="0.04285149980937101 0.07010000000000424 0.15191299999996632" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_hip_2_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_hip_2_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="green">
         <color rgba="0 1 0 1"/>
@@ -984,7 +984,7 @@
     <collision>
       <origin xyz="0.04285149980937101 0.07010000000000424 0.15191299999996632" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_hip_2_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_hip_2_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -1005,7 +1005,7 @@
     <visual>
       <origin xyz="0.0437090152 -0.07009999189999992 -0.22621299999996644" rpy="-1.5707963267948961 0 -1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_upper_thigh_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_upper_thigh_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="white">
         <color rgba="1 1 1 1"/>
@@ -1014,7 +1014,7 @@
     <collision>
       <origin xyz="0.0437090152 -0.07009999189999992 -0.22621299999996644" rpy="-1.5707963267948961 0 -1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_upper_thigh_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_upper_thigh_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -1033,7 +1033,7 @@
     <visual>
       <origin xyz="0.0437090152 0.07009999190000003 0.24081299999999994" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_thigh_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_thigh_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="dblue">
         <color rgba="0 0 0.8 1"/>
@@ -1042,7 +1042,7 @@
     <collision>
       <origin xyz="0.0437090152 0.07009999190000003 0.24081299999999994" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_thigh_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_thigh_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -1077,7 +1077,7 @@
     <visual>
       <origin xyz="0.0437090152 0.07009999200000007 0.38663799999999987" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_shank_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_shank_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="dgreen">
         <color rgba="0.1 0.8 0.1 1"/>
@@ -1086,7 +1086,7 @@
     <collision>
       <origin xyz="0.0437090152 0.07009999200000007 0.38663799999999987" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_shank_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_shank_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -1373,7 +1373,7 @@
     <visual>
       <origin xyz="0.0437090152 0.07009999200000011 0.5871379999999998" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_ankle_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_ankle_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="gray">
         <color rgba="0.5 0.5 0.5 1"/>
@@ -1382,7 +1382,7 @@
     <collision>
       <origin xyz="0.0437090152 0.07009999200000011 0.5871379999999998" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_ankle_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_ankle_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -1403,7 +1403,7 @@
     <visual>
       <origin xyz="0.043787799618642 0.07008610019070811 0.5871379999999998" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_foot_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_foot_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="green">
         <color rgba="0 1 0 1"/>
@@ -1412,7 +1412,7 @@
     <collision>
       <origin xyz="0.043787799618642 0.07008610019070811 0.5871379999999998" rpy="1.5707963267948961 0 1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_foot_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_foot_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -1433,7 +1433,7 @@
     <visual>
       <origin xyz="0.04720901500000001 -0.07009999199999985 -0.6474380002860779" rpy="-1.5707963267948961 0 -1.5707963267948961"/>
       <geometry>
-        <mesh filename="package://iRonCub-Mk1_1_v1/iRonCub/meshes/obj/sim_sea_2-5_r_sole_prt.obj" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://iRonCub-Mk1_1/iRonCub/meshes/obj/sim_sea_2-5_r_sole_prt.obj" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="black">
         <color rgba="0 0 0 1"/>
@@ -1526,7 +1526,7 @@
       <update_rate>400</update_rate>
       <pose>0.08515499999999998 -0.011000000000000022 -0.11230899999999999 -2.0943952105869323 -3.885780586188048e-16 -1.5707963267948963</pose>
       <plugin name="root_link_xsens_imu_plugin" filename="libgazebo_yarp_imu.so">
-         <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/gazebo_icub_xsens_inertial.ini</yarpConfigurationFile>
+         <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/gazebo_icub_xsens_inertial.ini</yarpConfigurationFile>
       </plugin>
     </sensor>
 </gazebo>
@@ -1597,48 +1597,48 @@
 </gazebo>
   <gazebo>
 <plugin name="iCub_yarp_gazebo_plugin_ACCpart" filename="libgazebo_yarp_distributedinertials.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/MTB/gazebo_icub_left_leg_mtb.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/MTB/gazebo_icub_left_leg_mtb.ini</yarpConfigurationFile>
 </plugin>
 <plugin name="iCub_yarp_gazebo_plugin_ACCpart" filename="libgazebo_yarp_distributedinertials.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/MTB/gazebo_icub_right_leg_mtb.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/MTB/gazebo_icub_right_leg_mtb.ini</yarpConfigurationFile>
 </plugin>
 <plugin name="iCub_yarp_gazebo_plugin_ACCpart" filename="libgazebo_yarp_distributedinertials.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/MTB/gazebo_icub_left_arm_mtb.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/MTB/gazebo_icub_left_arm_mtb.ini</yarpConfigurationFile>
 </plugin>
 <plugin name="iCub_yarp_gazebo_plugin_ACCpart" filename="libgazebo_yarp_distributedinertials.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/MTB/gazebo_icub_right_arm_mtb.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/MTB/gazebo_icub_right_arm_mtb.ini</yarpConfigurationFile>
 </plugin>
 <plugin name="iCub_yarp_gazebo_plugin_ACCpart" filename="libgazebo_yarp_distributedinertials.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/MTB/gazebo_icub_torso_mtb.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/MTB/gazebo_icub_torso_mtb.ini</yarpConfigurationFile>
 </plugin>
 <plugin name="controlboard_torso" filename="libgazebo_yarp_controlboard.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/gazebo_icub_torso.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/gazebo_icub_torso.ini</yarpConfigurationFile>
 </plugin>
 <plugin name="controlboard_head_without_eyes" filename="libgazebo_yarp_controlboard.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/gazebo_icub_head_without_eyes.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/gazebo_icub_head_without_eyes.ini</yarpConfigurationFile>
 </plugin>
 <plugin name="controlboard_left_arm_no_hand" filename="libgazebo_yarp_controlboard.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/gazebo_icub_left_arm.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/gazebo_icub_left_arm.ini</yarpConfigurationFile>
   <initialConfiguration>-0.52 0.52 0 0.785</initialConfiguration>
 </plugin>
 <plugin name="controlboard_right_arm_no_hand" filename="libgazebo_yarp_controlboard.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/gazebo_icub_right_arm.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/gazebo_icub_right_arm.ini</yarpConfigurationFile>
   <initialConfiguration>-0.52 0.52 0 0.785</initialConfiguration>
 </plugin>
 <plugin name="controlboard_right_leg" filename="libgazebo_yarp_controlboard.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/gazebo_icub_right_leg.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/gazebo_icub_right_leg.ini</yarpConfigurationFile>
 </plugin>
 <plugin name="controlboard_left_leg" filename="libgazebo_yarp_controlboard.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/gazebo_icub_left_leg.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/gazebo_icub_left_leg.ini</yarpConfigurationFile>
 </plugin>
 <plugin name="apply_external_wrench" filename="libgazebo_yarp_externalwrench.so">
-  <robotNamefromConfigFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/gazebo_icub_robotname.ini</robotNamefromConfigFile>
+  <robotNamefromConfigFile>model://iRonCub-Mk1_1/iRonCub/conf/gazebo_icub_robotname.ini</robotNamefromConfigFile>
 </plugin>
 <plugin name="basestate" filename="libgazebo_yarp_basestate.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/base.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/base.ini</yarpConfigurationFile>
 </plugin>
 <plugin name="jets-plugin" filename="libjets-plugin-v1.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/jets.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/jets.ini</yarpConfigurationFile>
 </plugin>
 </gazebo>
   <gazebo reference="r_hip_pitch">
@@ -1729,7 +1729,7 @@
       </force_torque>
       <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
       <plugin name="left_leg_ft_plugin" filename="libgazebo_yarp_forcetorque.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/FT/gazebo_icub_left_leg_ft.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/FT/gazebo_icub_left_leg_ft.ini</yarpConfigurationFile>
 </plugin>
     </sensor>
   </gazebo>
@@ -1751,7 +1751,7 @@
       </force_torque>
       <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
       <plugin name="right_leg_ft_plugin" filename="libgazebo_yarp_forcetorque.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/FT/gazebo_icub_right_leg_ft.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/FT/gazebo_icub_right_leg_ft.ini</yarpConfigurationFile>
 </plugin>
     </sensor>
   </gazebo>
@@ -1773,7 +1773,7 @@
       </force_torque>
       <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
       <plugin name="left_foot_ft_plugin" filename="libgazebo_yarp_forcetorque.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/FT/gazebo_icub_left_foot_ft.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/FT/gazebo_icub_left_foot_ft.ini</yarpConfigurationFile>
 </plugin>
     </sensor>
   </gazebo>
@@ -1795,7 +1795,7 @@
       </force_torque>
       <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
       <plugin name="right_foot_ft_plugin" filename="libgazebo_yarp_forcetorque.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/FT/gazebo_icub_right_foot_ft.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/FT/gazebo_icub_right_foot_ft.ini</yarpConfigurationFile>
 </plugin>
     </sensor>
   </gazebo>
@@ -1817,7 +1817,7 @@
       </force_torque>
       <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
       <plugin name="left_arm_ft_plugin" filename="libgazebo_yarp_forcetorque.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/FT/gazebo_icub_left_arm_ft.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/FT/gazebo_icub_left_arm_ft.ini</yarpConfigurationFile>
 </plugin>
     </sensor>
   </gazebo>
@@ -1839,7 +1839,7 @@
       </force_torque>
       <pose>0.0 0.0 0.0 0.0 -0.0 0.0</pose>
       <plugin name="right_arm_ft_plugin" filename="libgazebo_yarp_forcetorque.so">
-  <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/FT/gazebo_icub_right_arm_ft.ini</yarpConfigurationFile>
+  <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/FT/gazebo_icub_right_arm_ft.ini</yarpConfigurationFile>
 </plugin>
     </sensor>
   </gazebo>
@@ -1857,7 +1857,7 @@
       <update_rate>100</update_rate>
       <pose>0.009500000190735 0.13344313685842288 0.00929998892871537 3.141592653589793 1.5707962897917267 -1.5707963267948966</pose>
       <plugin name="iCub_yarp_gazebo_plugin_IMU" filename="libgazebo_yarp_imu.so">
-    <yarpConfigurationFile>model://iRonCub-Mk1_1_v1/iRonCub/conf/gazebo_icub_inertial.ini</yarpConfigurationFile>
+    <yarpConfigurationFile>model://iRonCub-Mk1_1/iRonCub/conf/gazebo_icub_inertial.ini</yarpConfigurationFile>
 </plugin>
     </sensor>
   </gazebo>
