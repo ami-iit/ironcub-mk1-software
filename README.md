@@ -38,8 +38,8 @@ After setting up the `robotology-superbuild`, proceed to set up this repository.
 Execute the following commands in your terminal:
 
 ```bash
-git clone https://github.com/ami-iit/ironcub_mk1_software.git
-cd ironcub_mk1_software
+git clone https://github.com/ami-iit/ironcub-mk1-software.git
+cd ironcub-mk1-software
 mkdir build
 cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=</path/to/desired/install/dir>
@@ -60,8 +60,8 @@ Start by installing [Matlab](https://it.mathworks.com/products/matlab.html).
 Next, you have to install and configure a conda distribution following [the documentation in `robotology-superbuild`](https://github.com/robotology/robotology-superbuild/blob/7d79a44e90fbcedf137ab6c5c1d83b943d6e6839/doc/conda-forge.md). Then, once your environment is set, you can run the following command to install the required dependencies.
 
 ```sh
-git clone https://github.com/ami-iit/ironcub_mk1_software.git
-cd ironcub_mk1_software
+git clone https://github.com/ami-iit/ironcub-mk1-software.git
+cd ironcub-mk1-software
 mamba env create -n <conda-environment-name> --file environment.yml
 ```
 
@@ -72,7 +72,7 @@ For **Linux** or **macOS**, execute the following commands:
 ```bash
 
 mamba activate <conda-environment-name>
-cd ironcub_mk1_software
+cd ironcub-mk1-software
 mkdir build
 cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=</path/to/desired/install/dir>
@@ -85,7 +85,7 @@ For **Windows**, run these commands:
 
 ```cmd
 mamba activate <conda-environment-name>
-cd ironcub_mk1_software
+cd ironcub-mk1-software
 mkdir build
 cd build
 cmake .. -G"Visual Studio 17 2022" -DCMAKE_INSTALL_PREFIX=<\path\to\desired\install\dir>
@@ -94,7 +94,7 @@ echo call "<path\to\desired\install\dir>\share\ironcub\setup_v1.bat" > "%CONDA_P
 ```
 
 > [!warning]
-> If you haven't configured [`git lfs`](https://git-lfs.com/), run `git lfs install` and `git lfs pull` inside the `ironcub_mk1_software` folder.
+> If you haven't configured [`git lfs`](https://git-lfs.com/), run `git lfs install` and `git lfs pull` inside the `ironcub-mk1-software` folder.
 
 #### Using the Repository
 
@@ -110,7 +110,7 @@ mamba activate <conda-environment-name>
 
 ## Content
 
-Documentation entry points for the different folders are in the [wiki](https://github.com/ami-iit/ironcub_mk1_software/wiki) of the repo.
+Documentation entry points for the different folders are in the [wiki](https://github.com/ami-iit/ironcub-mk1-software/wiki) of the repo.
 
 - [flight-controllers-stable](flight-controllers-stable): Simulink controllers to run simulations of `iRonCub-Mk1` and `iRonCub-Mk1_1` flying in Gazebo simulator.
 
