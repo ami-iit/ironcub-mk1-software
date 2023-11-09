@@ -51,7 +51,7 @@ make install
 In the first use, add the following line to your `.bashrc` file:
 
 ```bash
-source $IRONCUB_INSTALL_PREFIX/share/ironcub/setup-v1.sh
+source $IRONCUB_INSTALL_PREFIX/share/ironcub-mk1-software/setup.sh
 ```
 
 ### Installation with Conda (Linux and Windows)
@@ -77,7 +77,7 @@ mkdir build
 cd build
 cmake .. -DCMAKE_INSTALL_PREFIX=</path/to/desired/install/dir>
 make install
-echo "source </path/to/desired/install/dir>/share/ironcub/setup_v1.sh" > "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_setup.sh"
+echo "source </path/to/desired/install/dir>/share/ironcub-mk1-software/setup.sh" > "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_setup.sh"
 chmod +x "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_setup.sh"
 ```
 
@@ -90,7 +90,7 @@ mkdir build
 cd build
 cmake .. -G"Visual Studio 17 2022" -DCMAKE_INSTALL_PREFIX=<\path\to\desired\install\dir>
 cmake --build . --config Release --target INSTALL
-echo call "<path\to\desired\install\dir>\share\ironcub\setup_v1.bat" > "%CONDA_PREFIX%\etc\conda\activate.d\ironcub_setup.bat"
+echo call "<path\to\desired\install\dir>\share\ironcub-mk1-software\setup.bat" > "%CONDA_PREFIX%\etc\conda\activate.d\ironcub_setup.bat"
 ```
 
 > [!warning]
@@ -105,8 +105,8 @@ mamba activate <conda-environment-name>
 ```
 
 > [!NOTE]
-> Activating the environment will automatically source `setup_v1.sh` (`setup_v1.bat` for windows).  If you want to deactivate the sourced variables, you should open a new terminal.
-> To better understand which variables are set by the `setup_v1.sh` script, see also these READMEs: [worlds](models/worlds#usage), [gazebo](lib/gazebo#setting-up-env-variables), and [models](models#installation-and-usage).
+> Activating the environment will automatically source `setup.sh` (`setup.bat` for windows).  If you want to deactivate the sourced variables, you should open a new terminal.
+> To better understand which variables are set by the `setup.sh` script, see also these READMEs: [worlds](models/worlds#usage), [gazebo](lib/gazebo#setting-up-env-variables), and [models](models#installation-and-usage).
 
 ## Content
 
