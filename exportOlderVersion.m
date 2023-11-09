@@ -1,5 +1,5 @@
 %  Export Simulink models to a previously supported version if needed. 
-%  Currently, the default version is MATLAB 2021b. 
+%  Currently, the default version is MATLAB 2023b. 
 %
 clc
 clear 
@@ -7,8 +7,8 @@ close all
 
 fprintf('\niRonCub Software\n');
 fprintf('\nExport models to a previous Matlab version\n');
-fprintf('\nDefault version: R2021b\n');
-fprintf('\nOldest supported version: R2019a\n');
+fprintf('\nDefault version: R2023b\n');
+fprintf('\nOldest supported version: R2021b\n');
 
 fprintf('\n######################################################\n');
 fprintf('\nWarning: this function exports only Simulink models.\n');
@@ -46,11 +46,11 @@ matlabVer = input('Specify the Matlab version to export models (format: R20XXx) 
 
 %% Verify matlab version
 
-% latest version: R2019b
-matlabVer_list     = {'R2019a','R2019b', 'R2020a', 'R2020b', 'R2021a', 'R2021b'};
+% oldest version: R2021b
+matlabVer_list     = {'R2021b', 'R2022a', 'R2022b', 'R2023a'};
 
-% associated Simulink version
-simulinkVer_number = {'9.3','10.0','10.1','10.2', '10.3', '10.4'};
+% associated Simulink version - see also https://en.wikipedia.org/wiki/Simulink
+simulinkVer_number = {'10.4', '10.5', '10.6', '10.7'};
 
 % installed Simulink version
 currentSimulinkVer = ver('Simulink');
@@ -82,8 +82,8 @@ elseif str2double(simulinkVer_number{matlabVer_found}) > str2double(currentSimul
 end
 
 %% Load the Simulink models and export to previous versions
-mdlVer_list = {'R2019A_MDL','R2019B_MDL', 'R2020A_MDL', 'R2020B_MDL', 'R2021A_MDL', 'R2021B_MDL'};
-slxVer_list = {'R2019A_SLX','R2019B_SLX', 'R2020A_SLX', 'R2020B_SLX', 'R2021A_SLX', 'R2021B_SLX'};
+mdlVer_list = {'R2021B_MDL', 'R2022A_MDL', 'R2022B_MDL', 'R2023A_MDL'};
+slxVer_list = {'R2021B_SLX', 'R2022A_SLX', 'R2022B_SLX', 'R2023A_SLX'};
 
 for k = 1:length(slxList)
 
