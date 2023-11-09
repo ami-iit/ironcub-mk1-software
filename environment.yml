@@ -20,6 +20,7 @@ dependencies:
   - opencv
   - pyyaml=5
   - catkin_pkg
+  - pip
   # Workaround for:
   # * https://github.com/ami-iit/ironcub_mk1_software/issues/11#issuecomment-1802102145
   # * https://github.com/conda-forge/openvino-feedstock/issues/52

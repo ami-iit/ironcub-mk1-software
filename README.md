@@ -6,9 +6,7 @@ This repo contains libraries, plugins and controllers to perform dynamics simula
 
 https://user-images.githubusercontent.com/12396934/219008717-117eb146-cca6-4056-8dd1-9a06100e97d1.mp4
 
-## Installation
-
-### Dependencies
+## Dependencies
 
 - [YARP](https://github.com/robotology/yarp);
 - [gazebo-yarp-plugins](https://github.com/robotology/gazebo-yarp-plugins);
@@ -20,95 +18,95 @@ https://user-images.githubusercontent.com/12396934/219008717-117eb146-cca6-4056-
 - [Eigen3](https://eigen.tuxfamily.org/index.php?title=Main_Page);
 - [matlab-whole-body-simulator](https://github.com/ami-iit/matlab-whole-body-simulator).
 
-**Note:** the lowest suppported Matlab version is `R2021b`, and the lowest supported Gazebo version is `v.8`. For controllers that use Simulink library blocks from `matlab-whole-body-simulator`, the lowest supported Matlab version is `R2022b`.
+> [!NOTE]
+> The oldest suppported Matlab version is `R2021b`, and the oldest supported Gazebo version is `v.8`. For controllers that use Simulink library blocks from `matlab-whole-body-simulator`, the lowest supported Matlab version is `R2022b`.
 
-The **highly recommended** way for installing all this dependencies (but Matlab and Gazebo) is to use the [robotology-superbuild](https://github.com/robotology/robotology-superbuild), making sure to enable the `ROBOTOLOGY_ENABLE_DYNAMICS` and `ROBOTOLOGY_USES_GAZEBO` CMake options. 
 
-A quick way to install the dependencies is via [conda package manager](https://docs.conda.io) which provides binary packages for Linux, macOS and Windows of the software contained in the robotology-superbuild. Relying on the community-maintained [`conda-forge`](https://conda-forge.org/) channel and also the `robotology` conda channel.
+A possible way for installing all this dependencies, except Matlab and Gazebo, is to use the [robotology-superbuild](https://github.com/robotology/robotology-superbuild).
+An alternative is the usage of a [conda package manager](https://docs.conda.io) which provides binary packages for Linux, macOS and Windows.
+Please refers to the next sections for more details.
 
-Please refer to [the documentation in `robotology-superbuild`](https://github.com/robotology/robotology-superbuild/blob/7d79a44e90fbcedf137ab6c5c1d83b943d6e6839/doc/conda-forge.md) to install and configure a conda distribution. Then, once your environment is set, you can run the following command to install the required dependencies.
+## Installation
+### Installation via robotology-superbuild (Linux Only)
 
-```sh
-mamba env create -n <conda-environment-name> --file environment.yml
-mamba activate  <conda-environment-name>
-```
+First, you must install [matlab](https://it.mathworks.com/products/matlab.html) and [Gazebo](https://classic.gazebosim.org/download).
+Then, you have to configure the other dependencies via [robotology-superbuild](https://github.com/robotology/robotology-superbuild) making sure to enable the `ROBOTOLOGY_ENABLE_DYNAMICS`, `ROBOTOLOGY_USES_GAZEBO` CMake options, and checkout to tag [`v2023.08.0`](https://github.com/robotology/robotology-superbuild/releases/tag/v2023.08.0).
+After setting up the `robotology-superbuild`, proceed to set up this repository.
 
-The installation procedure has been tested on Ubuntu 20.04 and Windows 10.
+#### Compilation
 
-## Compilation
-
-On **Linux** or **macOS**, run:
+Execute the following commands in your terminal:
 
 ```bash
+git clone https://github.com/ami-iit/ironcub_mk1_software.git
 cd ironcub_mk1_software
 mkdir build
 cd build
-cmake .. -DCMAKE_INSTALL_PREFIX="/path/to/desired/install/dir" .
+cmake .. -DCMAKE_INSTALL_PREFIX=</path/to/desired/install/dir>
 make install
 ```
 
-On **Windows**, run:
+#### Using the Repository
 
-```cmd
-cd ironcub_mk1_software
-mkdir build
-cd build
-cmake .. -G"Visual Studio 16 2019" -DCMAKE_INSTALL_PREFIX="\path\to\desired\install\dir"
-cmake --build . --config Release --target INSTALL
-```
-
-> [!warning]
-> If you haven't configured [`git lfs`](https://git-lfs.com/), run `git lfs install` and `git lfs pull` inside the `ironcub_mk1_software` folder.
-
-
-## Running the repo on Windows
-
-To run the repository on Windows it is necessary to properly setup a Windows terminal where commands are executed. First, create a file `setup.bat` with the following content:
-
-```cmd
-call mamba activate <conda-environment-name>
-call <path-to-the-robotology-superbuild>\robotology-superbuild\build\install\share\robotology-superbuild\setup.bat
-
-rem From the iRonCub Software documentation
-call <\path\to\desired\install\dir>\share\ironcub\setup-v1.bat
-
-rem Unset the MESA variable (maybe useless on Windows)
-set MESA_LOADER_DRIVER_OVERRIDE=
-```
-
-In this way the `batch` file will load both the setup script from the `robotology-superbuild` and the `ironcub_mk1_software`. Then, download **Windows Terminal** from the _Microsoft Store_.
-
-Launch the Windows Terminal app, go on `settings` and `Create a new profile`, then create a new profile specifying the new name and the tab-name.
-
-Select `Open Json file`.
-
-In the `settings.json` file search for `"list"` inside `"profiles"`, there in the newly generated terminal (easy to find by the `"name"` variable) set the value for `"commandline"` as:
-
-```bash
-"commandline": "cmd.exe /k \"<path-to-the-setup-file>\\setup.bat\""
-```
-
-**IMPORTANT: in the `"commandline"` path be sure to use `\\` as path separator for the correct `.json` file syntax.**
-
-Now the Windows Terminal has the `setup.bat` file acting in a similar way to the `.bashrc` file on _Linux_ OS.
-
-## Running the repo on Ubuntu
-
-Add to your `.bashrc` file the following line:
+In the first use, add the following line to your `.bashrc` file:
 
 ```bash
 source $IRONCUB_INSTALL_PREFIX/share/ironcub/setup-v1.sh
 ```
 
-This `sh` file contains the paths that are needed to use this repo. 
+### Installation with Conda (Linux and Windows)
 
-**For Gazebo simulations:**
+Start by installing [Matlab](https://it.mathworks.com/products/matlab.html).
+Next, you have to install and configure a conda distribution following [the documentation in `robotology-superbuild`](https://github.com/robotology/robotology-superbuild/blob/7d79a44e90fbcedf137ab6c5c1d83b943d6e6839/doc/conda-forge.md). Then, once your environment is set, you can run the following command to install the required dependencies.
 
-To better understand which variables are set by the `setup-v1.sh` script, see also these READMEs:
+```sh
+git clone https://github.com/ami-iit/ironcub_mk1_software.git
+cd ironcub_mk1_software
+mamba env create -n <conda-environment-name> --file environment.yml
+```
 
-- https://github.com/ami-iit/ironcub_mk1_software/tree/porting_mk1_mk1_1/models/worlds#usage
-- https://github.com/ami-iit/ironcub_mk1_software/blob/porting_mk1_mk1_1/lib/gazebo/README.md#setting-up-env-variables
-- https://github.com/ami-iit/ironcub_mk1_software/tree/porting_mk1_mk1_1/models#installation-and-usage
+#### Compilation
+
+For **Linux** or **macOS**, execute the following commands:
+
+```bash
+
+mamba activate <conda-environment-name>
+cd ironcub_mk1_software
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=</path/to/desired/install/dir>
+make install
+echo "source </path/to/desired/install/dir>/share/ironcub/setup_v1.sh" > "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_setup.sh"
+chmod +x "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_setup.sh"
+```
+
+For **Windows**, run these commands:
+
+```cmd
+mamba activate <conda-environment-name>
+cd ironcub_mk1_software
+mkdir build
+cd build
+cmake .. -G"Visual Studio 17 2022" -DCMAKE_INSTALL_PREFIX=<\path\to\desired\install\dir>
+cmake --build . --config Release --target INSTALL
+echo call "<path\to\desired\install\dir>\share\ironcub\setup_v1.bat" > "%CONDA_PREFIX%\etc\conda\activate.d\ironcub_setup.bat"
+```
+
+> [!warning]
+> If you haven't configured [`git lfs`](https://git-lfs.com/), run `git lfs install` and `git lfs pull` inside the `ironcub_mk1_software` folder.
+
+#### Using the Repository
+
+Open the terminal and activate the conda environment
+
+```bash
+mamba activate <conda-environment-name>
+```
+
+> [!NOTE]
+> Activating the environment will automatically source `setup_v1.sh` (`setup_v1.bat` for windows).  If you want to deactivate the sourced variables, you should open a new terminal.
+> To better understand which variables are set by the `setup_v1.sh` script, see also these READMEs: [worlds](models/worlds#usage), [gazebo](lib/gazebo#setting-up-env-variables), and [models](models#installation-and-usage).
 
 ## Content
 
