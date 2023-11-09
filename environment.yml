@@ -15,6 +15,7 @@ dependencies:
   - wb-toolbox 
   - whole-body-controllers 
   - whole-body-estimators 
+  - matlab-whole-body-simulator 
   - gazebo 
   - gazebo-yarp-plugins 
   - opencv
