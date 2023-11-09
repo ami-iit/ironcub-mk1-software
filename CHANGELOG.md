@@ -11,15 +11,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Changed
 
-- changed models folder name to avoid conflicts with component - by @gabrielenava https://github.com/ami-iit/ironcub_mk1_software/pull/5
+- changed models folder name to avoid conflicts with component - by @gabrielenava https://github.com/ami-iit/ironcub-mk1-software/pull/5
 
 #### Removed
 
 #### Fixed
 
-- fix naming after rename of the repo - by @FabioBergonti https://github.com/ami-iit/ironcub_mk1_software/pull/4
-- fix simulated IMU config files for Gazebo - by @gabrielenava https://github.com/ami-iit/ironcub_mk1_software/pull/5
+- fix naming after rename of the repo - by @FabioBergonti https://github.com/ami-iit/ironcub-mk1-software/pull/4
+- fix simulated IMU config files for Gazebo - by @gabrielenava https://github.com/ami-iit/ironcub-mk1-software/pull/5
 
-## [[v1.0](https://github.com/ami-iit/ironcub_mk1_software/releases/tag/v1.0)] - 2022-02-20
+## [[v1.0](https://github.com/ami-iit/ironcub-mk1-software/releases/tag/v1.0)] - 2022-02-20
 
 - first release of iRonCub Software.
