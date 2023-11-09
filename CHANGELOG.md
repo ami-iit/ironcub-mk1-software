@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 #### Changed
 
 - changed models folder name to avoid conflicts with component - by @gabrielenava https://github.com/ami-iit/ironcub-mk1-software/pull/5
+- aligned export matlab script to the supported matlab versions - by @gabrielenava https://github.com/ami-iit/ironcub-mk1-software/pull/19
 
 #### Removed
 
