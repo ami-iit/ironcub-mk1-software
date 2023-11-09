@@ -92,8 +92,8 @@ macro(generate_iRonCub_simmechanics)
       set(ASSIGNED_COLLISION_GEOMETRIES "")
     endif()
 
-    set(MESH_FILE_FORMAT "filenameformatchangeext: \"package://iRonCub-Mk1_1_v1/iRonCub/meshes/${GIVTWO_MESH_FORMAT_EXTENSION}/%s.${GIVTWO_MESH_FORMAT_EXTENSION}\"")
-    set(CONF_FILE_DIR "iRonCub-Mk1_1_v1/iRonCub/conf")
+    set(MESH_FILE_FORMAT "filenameformatchangeext: \"package://iRonCub-Mk1_1/iRonCub/meshes/${GIVTWO_MESH_FORMAT_EXTENSION}/%s.${GIVTWO_MESH_FORMAT_EXTENSION}\"")
+    set(CONF_FILE_DIR "iRonCub-Mk1_1/iRonCub/conf")
     set(ANKLE_PITCH_ROM "-35,35")
     set(REVERSE_ROTATION_AXIS
 "reverseRotationAxis:
@@ -162,7 +162,7 @@ endmacro()
 
 set(model-simmechanics-generated-models "")
 
-generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_1_Gazebo_v1
+generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_1_Gazebo
                               SIMMECHANICS_XML "IRONCUB-MK1_1_SIM_MODEL.xml"
                               YAML_TEMPLATE "IRONCUB-MK1_1_simmechanics_options.yaml.in"
                               CSV_TEMPLATE "IRONCUB-MK1_1_joint_parameters.csv.in"
@@ -170,7 +170,7 @@ generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_1_Gazebo_v1
                               MESH_FORMAT_EXTENSION "obj"
                               INCREASE_INERTIA_FOR_GAZEBO)
 
-generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_1_Gazebo_v1
+generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_1_Gazebo
                               SIMMECHANICS_XML "IRONCUB-MK1_1_SIM_MODEL.xml"
                               YAML_TEMPLATE "IRONCUB-MK1_1_simmechanics_options.yaml.in"
                               CSV_TEMPLATE "IRONCUB-MK1_1_joint_parameters.csv.in"
@@ -178,14 +178,14 @@ generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_1_Gazebo_v1
                               MESH_FORMAT_EXTENSION "stl"
                               INCREASE_INERTIA_FOR_GAZEBO)
 
-generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_1_v1
+generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_1
                               SIMMECHANICS_XML "IRONCUB-MK1_1_SIM_MODEL.xml"
                               YAML_TEMPLATE "IRONCUB-MK1_1_simmechanics_options.yaml.in"
                               CSV_TEMPLATE "IRONCUB-MK1_1_joint_parameters.csv.in"
                               MODEL_URDF_NAME "model.urdf"
                               MESH_FORMAT_EXTENSION "obj")
 
-generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_1_v1
+generate_iRonCub_simmechanics(YARP_ROBOT_NAME iRonCub-Mk1_1
                               SIMMECHANICS_XML "IRONCUB-MK1_1_SIM_MODEL.xml"
                               YAML_TEMPLATE "IRONCUB-MK1_1_simmechanics_options.yaml.in"
                               CSV_TEMPLATE "IRONCUB-MK1_1_joint_parameters.csv.in"

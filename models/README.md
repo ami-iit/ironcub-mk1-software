@@ -18,8 +18,8 @@ You should add these lines in your `.bashrc` (**warning**! not needed if you sou
 ``` bash
 export IRONCUB_SOFTWARE_SOURCE_DIR=[path where this repository is stored]
 export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:${IRONCUB_SOFTWARE_SOURCE_DIR}/models/
-export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:${IRONCUB_SOFTWARE_SOURCE_DIR}/models/iRonCub-Mk1_v1/iRonCub/robots
-export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:${IRONCUB_SOFTWARE_SOURCE_DIR}/models/iRonCub-Mk1_1_v1/iRonCub/robots
+export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:${IRONCUB_SOFTWARE_SOURCE_DIR}/models/iRonCub-Mk1/iRonCub/robots
+export GAZEBO_MODEL_PATH=${GAZEBO_MODEL_PATH}:${IRONCUB_SOFTWARE_SOURCE_DIR}/models/iRonCub-Mk1_1/iRonCub/robots
 ```
 
 #### How to use models in Gazebo (on Windows)
@@ -29,8 +29,8 @@ You should add these lines in your custom `.bat` file to be called from terminal
 ``` cmd
 set IRONCUB_SOFTWARE_SOURCE_DIR=[path where this repository is stored]
 set GAZEBO_MODEL_PATH=%GAZEBO_MODEL_PATH%;%IRONCUB_SOFTWARE_SOURCE_DIR%\models\
-set GAZEBO_MODEL_PATH=%GAZEBO_MODEL_PATH%;%IRONCUB_SOFTWARE_SOURCE_DIR%\models\iRonCub-Mk1_v1\iRonCub\robots
-set GAZEBO_MODEL_PATH=%GAZEBO_MODEL_PATH%;%IRONCUB_SOFTWARE_SOURCE_DIR%\models\iRonCub-Mk1_1_v1\iRonCub\robots
+set GAZEBO_MODEL_PATH=%GAZEBO_MODEL_PATH%;%IRONCUB_SOFTWARE_SOURCE_DIR%\models\iRonCub-Mk1\iRonCub\robots
+set GAZEBO_MODEL_PATH=%GAZEBO_MODEL_PATH%;%IRONCUB_SOFTWARE_SOURCE_DIR%\models\iRonCub-Mk1_1\iRonCub\robots
 ```
 
 #### How to use the .urdf model with WBToolbox and Simulink (on Linux)
@@ -39,26 +39,26 @@ You should add these lines in your `.bashrc` (**warning**! not needed if you sou
 
 ``` bash
 export IRONCUB_SOFTWARE_SOURCE_DIR=[path where this repository is stored]
-export YARP_DATA_DIRS=${YARP_DATA_DIRS}:${IRONCUB_SOFTWARE_SOURCE_DIR}/models/iRonCub-Mk1_v1/iRonCub/
-export YARP_DATA_DIRS=${YARP_DATA_DIRS}:${IRONCUB_SOFTWARE_SOURCE_DIR}/models/iRonCub-Mk1_1_v1/iRonCub/
+export YARP_DATA_DIRS=${YARP_DATA_DIRS}:${IRONCUB_SOFTWARE_SOURCE_DIR}/models/iRonCub-Mk1/iRonCub/
+export YARP_DATA_DIRS=${YARP_DATA_DIRS}:${IRONCUB_SOFTWARE_SOURCE_DIR}/models/iRonCub-Mk1_1/iRonCub/
 ```
 
 Set the `YARP_ROBOT_NAME` variable as the name of the folder where the `model.urdf` is stored.
-- `export YARP_ROBOT_NAME=iRonCub-Mk1_Gazebo_v1` for using `iRonCub Mk1` with **Gazebo**
-- `export YARP_ROBOT_NAME=iRonCub-Mk1_1_Gazebo_v1` for using `iRonCub Mk1_1` with **Gazebo**
+- `export YARP_ROBOT_NAME=iRonCub-Mk1_Gazebo` for using `iRonCub Mk1` with **Gazebo**
+- `export YARP_ROBOT_NAME=iRonCub-Mk1_1_Gazebo` for using `iRonCub Mk1_1` with **Gazebo**
 
 #### How to use the .urdf model with WBToolbox and Simulink (on Windows)
 You should add these lines in your custom `.bat` file to be called from terminal (**warning**! not needed if you call the `setup.bat` file as described in this [README](../README.md#create-the-setupbat-file))
 
 ``` cmd
 set IRONCUB_SOFTWARE_SOURCE_DIR=[path where this repository is stored]
-set YARP_DATA_DIRS=%YARP_DATA_DIRS%;%IRONCUB_SOFTWARE_SOURCE_DIR%\models\iRonCub-Mk1_v1\iRonCub\
-set YARP_DATA_DIRS=%YARP_DATA_DIRS%;%IRONCUB_SOFTWARE_SOURCE_DIR%\models\iRonCub-Mk1_1_v1\iRonCub\
+set YARP_DATA_DIRS=%YARP_DATA_DIRS%;%IRONCUB_SOFTWARE_SOURCE_DIR%\models\iRonCub-Mk1\iRonCub\
+set YARP_DATA_DIRS=%YARP_DATA_DIRS%;%IRONCUB_SOFTWARE_SOURCE_DIR%\models\iRonCub-Mk1_1\iRonCub\
 ```
 
 Set the `YARP_ROBOT_NAME` variable as the name of the folder where the `model.urdf` is stored.
-- `set YARP_ROBOT_NAME=iRonCub-Mk1_Gazebo_v1` for using `iRonCub Mk1` with **Gazebo**
-- `set YARP_ROBOT_NAME=iRonCub-Mk1_1_Gazebo_v1` for using `iRonCub Mk1_1` with **Gazebo**
+- `set YARP_ROBOT_NAME=iRonCub-Mk1_Gazebo` for using `iRonCub Mk1` with **Gazebo**
+- `set YARP_ROBOT_NAME=iRonCub-Mk1_1_Gazebo` for using `iRonCub Mk1_1` with **Gazebo**
 
 #### How to launch the yarpmotorgui (on Linux)
 
@@ -80,4 +80,5 @@ You can use the following command:
 ``` bash
 yarprobotinterface --config launch-wholebodydynamics-iRonCub.xml
 ```
-(**warning:** by default the FT sensors offsets are set to zero by ```<param name="startWithZeroFTSensorOffsets">true</param>``` [here](./iRonCub-Mk1_v1/iRonCub/robots/iRonCub-Mk1_Gazebo_v1/estimators/wholebodydynamics-external-iRonCub.xml#L18) for `iRonCub-Mk1_Gazebo_v1` model and [here](./iRonCub-Mk1_1_v1/iRonCub/robots/iRonCub-Mk1_1_Gazebo_v1/estimators/wholebodydynamics-external-iRonCub.xml#L18) for `iRonCub-Mk1_1_Gazebo_v1` model).
+(**warning:** by default the FT sensors offsets are set to zero by ```<param name="startWithZeroFTSensorOffsets">true</param>``` [here](./iRonCub-Mk1/iRonCub/robots/iRonCub-Mk1_Gazebo/estimators/wholebodydynamics-external-iRonCub.xml#L18) for `iRonCub-Mk1_Gazebo` model and [here](./iRonCub-Mk1_1/iRonCub/robots/iRonCub-Mk1_1_Gazebo/estimators/wholebodydynamics-external-iRonCub.xml#L18) for `iRonCub-Mk1_1_Gazebo` model).
+ 
