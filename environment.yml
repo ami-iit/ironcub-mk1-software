@@ -22,7 +22,7 @@ dependencies:
   - pyyaml=5
   - catkin_pkg
   - pip
-  - pugixml 1.14
+  - pugixml=1.14
   - pip:
     - git+https://github.com/ros/urdf_parser_py@31474b9baaf7c3845b40e5a9aa87d5900a2282c3
     - git+https://github.com/robotology/simmechanics-to-urdf@v0.4.1
