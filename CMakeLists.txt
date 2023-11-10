@@ -71,5 +71,5 @@ add_subdirectory(lib)
 add_subdirectory(models)
 
 # Configure MATLAB startup file
-configure_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/templates/setup_v1.in ${CMAKE_BINARY_DIR}/share/setup_v1${SETUP_SCRIPT_EXTENSION})
-INSTALL(FILES ${CMAKE_BINARY_DIR}/share/setup_v1${SETUP_SCRIPT_EXTENSION} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/ironcub)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/templates/setup.in ${CMAKE_BINARY_DIR}/share/setup${SETUP_SCRIPT_EXTENSION})
+INSTALL(FILES ${CMAKE_BINARY_DIR}/share/setup${SETUP_SCRIPT_EXTENSION} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/ironcub-mk1-software)
