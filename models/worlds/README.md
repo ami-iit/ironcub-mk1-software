@@ -12,5 +12,4 @@ export GAZEBO_RESOURCE_PATH=$GAZEBO_RESOURCE_PATH:$IRONCUB_SOFTWARE_SOURCE_DIR/m
 
 ```
 
-Once the words are added to Gazebo resurce path, call Gazebo followed by the name of the world file, e.g. `gazebo iRonCub_Mk1_1_world1`.
-
+Once the words are added to Gazebo resurce path, call Gazebo followed by the name of the world file, e.g. `gazebo iRonCub_Mk1_1_world`.
