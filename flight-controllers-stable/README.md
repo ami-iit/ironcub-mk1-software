@@ -48,7 +48,7 @@ export YARP_ROBOT_NAME=iRonCub-Mk1_Gazebo
   ```
   If you have correctly configured the [iRonCub world](../models/worlds), you may run also:  
   ```
-  gazebo -slibgazebo_yarp_clock.so iRonCub_Mk1_1_world1 
+  gazebo -slibgazebo_yarp_clock.so iRonCub_Mk1_1_world 
   ```
   (world for `iRonCub-Mk1_1`).
 
