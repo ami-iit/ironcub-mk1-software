@@ -57,12 +57,12 @@ source $IRONCUB_INSTALL_PREFIX/share/ironcub-mk1-software/setup.sh
 ### Installation with Conda (Linux and Windows)
 
 Start by installing [Matlab](https://it.mathworks.com/products/matlab.html).
-Next, you have to install and configure a conda distribution following [the documentation in `robotology-superbuild`](https://github.com/robotology/robotology-superbuild/blob/7d79a44e90fbcedf137ab6c5c1d83b943d6e6839/doc/conda-forge.md). Then, once your environment is set, you can run the following command to install the required dependencies.
+Next, you have to install and configure a conda distribution following [the documentation in `robotology-superbuild`](https://github.com/robotology/robotology-superbuild/blob/releases/2025.02/doc/conda-forge.md). Then, once your environment is set, you can run the following command to install the required dependencies.
 
 ```sh
 git clone https://github.com/ami-iit/ironcub-mk1-software.git
 cd ironcub-mk1-software
-mamba env create -n <conda-environment-name> --file environment.yml
+conda env create -n <conda-environment-name> --file environment.yml
 ```
 
 #### Compilation
@@ -71,7 +71,7 @@ For **Linux** or **macOS**, execute the following commands:
 
 ```bash
 
-mamba activate <conda-environment-name>
+conda activate <conda-environment-name>
 cd ironcub-mk1-software
 mkdir build
 cd build
@@ -84,7 +84,7 @@ chmod +x "${CONDA_PREFIX}/etc/conda/activate.d/ironcub_setup.sh"
 For **Windows**, run these commands:
 
 ```cmd
-mamba activate <conda-environment-name>
+conda activate <conda-environment-name>
 cd ironcub-mk1-software
 mkdir build
 cd build
@@ -101,7 +101,7 @@ echo call "<path\to\desired\install\dir>\share\ironcub-mk1-software\setup.bat" >
 Open the terminal and activate the conda environment
 
 ```bash
-mamba activate <conda-environment-name>
+conda activate <conda-environment-name>
 ```
 
 > [!NOTE]
